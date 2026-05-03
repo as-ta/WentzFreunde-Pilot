@@ -60,6 +60,11 @@ namespace WentzFreunde_Pilot
 
             txtEmail.Text = Mitglied.Email;
             txtEintritt.Text = Mitglied.Eintritt;
+
+            chbMitarbeit.Checked = Mitglied.Mitarbeit;
+
+            dateMandatsdatum.Value = Mitglied.Mandatsdatum == default ? DateTime.Now : Mitglied.Mandatsdatum;
+            txtMandatsreferenz.Text = Mitglied.Mandatsreferenz;
         }
 
         private void DatenAusFormularUebernehmen()
@@ -91,6 +96,11 @@ namespace WentzFreunde_Pilot
 
             Mitglied.Email = txtEmail.Text.Trim();
             Mitglied.Eintritt = txtEintritt.Text.Trim();
+
+            Mitglied.Mitarbeit = chbMitarbeit.Checked;
+
+            Mitglied.Mandatsdatum = dateMandatsdatum.Value;
+            Mitglied.Mandatsreferenz = txtMandatsreferenz.Text.Trim();
         }
 
         private void btnOK_Click(object sender, EventArgs e)
@@ -140,6 +150,10 @@ namespace WentzFreunde_Pilot
             lblVorname = new Label();
             txtVorname = new TextBox();
             grpBank = new GroupBox();
+            dateMandatsdatum = new DateTimePicker();
+            lblMandatsdatum = new Label();
+            lblMandatsreferenz = new Label();
+            txtMandatsreferenz = new TextBox();
             lblNameDerBank = new Label();
             txtNameDerBank = new TextBox();
             lblBIC = new Label();
@@ -156,6 +170,7 @@ namespace WentzFreunde_Pilot
             lblBeitrag = new Label();
             txtMitgliedsbeitrag = new TextBox();
             lblEuro = new Label();
+            chbMitarbeit = new CheckBox();
             grpPersonal.SuspendLayout();
             grpBank.SuspendLayout();
             SuspendLayout();
@@ -163,7 +178,7 @@ namespace WentzFreunde_Pilot
             // btnAbbrechen
             // 
             btnAbbrechen.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            btnAbbrechen.Location = new Point(909, 736);
+            btnAbbrechen.Location = new Point(958, 759);
             btnAbbrechen.Name = "btnAbbrechen";
             btnAbbrechen.Size = new Size(150, 46);
             btnAbbrechen.TabIndex = 19;
@@ -174,7 +189,7 @@ namespace WentzFreunde_Pilot
             // btnOK
             // 
             btnOK.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            btnOK.Location = new Point(1082, 736);
+            btnOK.Location = new Point(1131, 759);
             btnOK.Name = "btnOK";
             btnOK.Size = new Size(264, 46);
             btnOK.TabIndex = 20;
@@ -208,7 +223,7 @@ namespace WentzFreunde_Pilot
             grpPersonal.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             grpPersonal.Location = new Point(12, 98);
             grpPersonal.Name = "grpPersonal";
-            grpPersonal.Size = new Size(1351, 341);
+            grpPersonal.Size = new Size(1400, 341);
             grpPersonal.TabIndex = 3;
             grpPersonal.TabStop = false;
             grpPersonal.Text = "Mitglied";
@@ -237,7 +252,7 @@ namespace WentzFreunde_Pilot
             // 
             cmbAnrede2.Font = new Font("Segoe UI", 9F);
             cmbAnrede2.FormattingEnabled = true;
-            cmbAnrede2.Location = new Point(897, 266);
+            cmbAnrede2.Location = new Point(945, 266);
             cmbAnrede2.Name = "cmbAnrede2";
             cmbAnrede2.Size = new Size(437, 40);
             cmbAnrede2.TabIndex = 13;
@@ -264,7 +279,7 @@ namespace WentzFreunde_Pilot
             // txtEmail
             // 
             txtEmail.Font = new Font("Segoe UI", 9F);
-            txtEmail.Location = new Point(897, 221);
+            txtEmail.Location = new Point(945, 221);
             txtEmail.Name = "txtEmail";
             txtEmail.Size = new Size(437, 39);
             txtEmail.TabIndex = 11;
@@ -300,7 +315,7 @@ namespace WentzFreunde_Pilot
             // txtWohnort
             // 
             txtWohnort.Font = new Font("Segoe UI", 9F);
-            txtWohnort.Location = new Point(897, 176);
+            txtWohnort.Location = new Point(945, 176);
             txtWohnort.Name = "txtWohnort";
             txtWohnort.Size = new Size(437, 39);
             txtWohnort.TabIndex = 9;
@@ -372,7 +387,7 @@ namespace WentzFreunde_Pilot
             // txtNachname
             // 
             txtNachname.Font = new Font("Segoe UI", 9F);
-            txtNachname.Location = new Point(897, 83);
+            txtNachname.Location = new Point(945, 83);
             txtNachname.Name = "txtNachname";
             txtNachname.Size = new Size(437, 39);
             txtNachname.TabIndex = 6;
@@ -398,6 +413,10 @@ namespace WentzFreunde_Pilot
             // grpBank
             // 
             grpBank.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            grpBank.Controls.Add(dateMandatsdatum);
+            grpBank.Controls.Add(lblMandatsdatum);
+            grpBank.Controls.Add(lblMandatsreferenz);
+            grpBank.Controls.Add(txtMandatsreferenz);
             grpBank.Controls.Add(lblNameDerBank);
             grpBank.Controls.Add(txtNameDerBank);
             grpBank.Controls.Add(lblBIC);
@@ -411,11 +430,47 @@ namespace WentzFreunde_Pilot
             grpBank.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             grpBank.Location = new Point(22, 478);
             grpBank.Name = "grpBank";
-            grpBank.Size = new Size(1351, 236);
+            grpBank.Size = new Size(1400, 250);
             grpBank.TabIndex = 4;
             grpBank.TabStop = false;
             grpBank.Text = "Bankdaten / Kontoinhaber";
             grpBank.Enter += grpBank_Enter;
+            // 
+            // dateMandatsdatum
+            // 
+            dateMandatsdatum.Font = new Font("Segoe UI", 9F);
+            dateMandatsdatum.Location = new Point(936, 187);
+            dateMandatsdatum.Name = "dateMandatsdatum";
+            dateMandatsdatum.Size = new Size(437, 39);
+            dateMandatsdatum.TabIndex = 22;
+            // 
+            // lblMandatsdatum
+            // 
+            lblMandatsdatum.AutoSize = true;
+            lblMandatsdatum.Font = new Font("Segoe UI", 9F);
+            lblMandatsdatum.Location = new Point(747, 192);
+            lblMandatsdatum.Name = "lblMandatsdatum";
+            lblMandatsdatum.Size = new Size(175, 32);
+            lblMandatsdatum.TabIndex = 21;
+            lblMandatsdatum.Text = "Mandatsdatum";
+            // 
+            // lblMandatsreferenz
+            // 
+            lblMandatsreferenz.AutoSize = true;
+            lblMandatsreferenz.Font = new Font("Segoe UI", 9F);
+            lblMandatsreferenz.Location = new Point(0, 189);
+            lblMandatsreferenz.Name = "lblMandatsreferenz";
+            lblMandatsreferenz.Size = new Size(67, 32);
+            lblMandatsreferenz.TabIndex = 19;
+            lblMandatsreferenz.Text = "IBAN";
+            // 
+            // txtMandatsreferenz
+            // 
+            txtMandatsreferenz.Font = new Font("Segoe UI", 9F);
+            txtMandatsreferenz.Location = new Point(219, 186);
+            txtMandatsreferenz.Name = "txtMandatsreferenz";
+            txtMandatsreferenz.Size = new Size(437, 39);
+            txtMandatsreferenz.TabIndex = 20;
             // 
             // lblNameDerBank
             // 
@@ -432,7 +487,7 @@ namespace WentzFreunde_Pilot
             txtNameDerBank.Font = new Font("Segoe UI", 9F);
             txtNameDerBank.Location = new Point(219, 141);
             txtNameDerBank.Name = "txtNameDerBank";
-            txtNameDerBank.Size = new Size(1105, 39);
+            txtNameDerBank.Size = new Size(1154, 39);
             txtNameDerBank.TabIndex = 18;
             // 
             // lblBIC
@@ -448,7 +503,7 @@ namespace WentzFreunde_Pilot
             // txtBIC
             // 
             txtBIC.Font = new Font("Segoe UI", 9F);
-            txtBIC.Location = new Point(887, 96);
+            txtBIC.Location = new Point(936, 96);
             txtBIC.Name = "txtBIC";
             txtBIC.Size = new Size(437, 39);
             txtBIC.TabIndex = 17;
@@ -484,7 +539,7 @@ namespace WentzFreunde_Pilot
             // txtKontoinhaberNachname
             // 
             txtKontoinhaberNachname.Font = new Font("Segoe UI", 9F);
-            txtKontoinhaberNachname.Location = new Point(887, 51);
+            txtKontoinhaberNachname.Location = new Point(936, 51);
             txtKontoinhaberNachname.Name = "txtKontoinhaberNachname";
             txtKontoinhaberNachname.Size = new Size(437, 39);
             txtKontoinhaberNachname.TabIndex = 15;
@@ -559,11 +614,24 @@ namespace WentzFreunde_Pilot
             lblEuro.TabIndex = 8;
             lblEuro.Text = "€";
             // 
+            // chbMitarbeit
+            // 
+            chbMitarbeit.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            chbMitarbeit.AutoSize = true;
+            chbMitarbeit.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            chbMitarbeit.Location = new Point(22, 765);
+            chbMitarbeit.Name = "chbMitarbeit";
+            chbMitarbeit.Size = new Size(270, 36);
+            chbMitarbeit.TabIndex = 21;
+            chbMitarbeit.Text = "zur Mitarbeit bereit";
+            chbMitarbeit.UseVisualStyleBackColor = true;
+            // 
             // formMember
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1375, 806);
+            ClientSize = new Size(1424, 829);
+            Controls.Add(chbMitarbeit);
             Controls.Add(lblEuro);
             Controls.Add(txtMitgliedsbeitrag);
             Controls.Add(lblBeitrag);
@@ -576,6 +644,9 @@ namespace WentzFreunde_Pilot
             Controls.Add(btnAbbrechen);
             Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
+            MaximumSize = new Size(1450, 900);
+            MinimizeBox = false;
+            MinimumSize = new Size(1450, 900);
             Name = "formMember";
             Text = "Wentzinger Freund";
             Load += formMember_Load;
@@ -628,5 +699,10 @@ namespace WentzFreunde_Pilot
         private TextBox txtIBAN;
         private Label lblNameDerBank;
         private TextBox txtNameDerBank;
+        private CheckBox chbMitarbeit;
+        private Label lblMandatsdatum;
+        private Label lblMandatsreferenz;
+        private TextBox txtMandatsreferenz;
+        private DateTimePicker dateMandatsdatum;
     }
 }

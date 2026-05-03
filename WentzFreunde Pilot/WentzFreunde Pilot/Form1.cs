@@ -9,7 +9,12 @@ namespace WentzFreunde_Pilot
     public partial class FrmMain : Form
     {
         //private List<Data.Member> members = new List<Data.Member>();
-        private BindingList<Data.Member> members;
+        //private BindingList<Data.Member> members;
+        private SortableBindingList<Data.Member> members;
+
+
+        private BindingSource memberBindingSource = new BindingSource();
+        private SepaConfig sepaConfig;
 
         public FrmMain()
         {
@@ -20,12 +25,21 @@ namespace WentzFreunde_Pilot
         {
             var geladeneMitglieder = BussinesLogic.MemberSave.Laden();
 
-            members = new BindingList<Data.Member>(geladeneMitglieder);
+            sepaConfig = BussinesLogic.SepaConfigSave.Laden();
+
+            //members = new BindingList<Data.Member>(geladeneMitglieder);
+            members = new SortableBindingList<Data.Member>(
+                BussinesLogic.MemberSave.Laden()
+            );
+
+            memberBindingSource.DataSource = members;
+
 
             this.WindowState = FormWindowState.Maximized;
 
             gridMembers.AutoGenerateColumns = true;
-            gridMembers.DataSource = members;
+
+            gridMembers.DataSource = memberBindingSource;
 
             gridMembers.ReadOnly = true;
             gridMembers.AllowUserToOrderColumns = true;
@@ -95,7 +109,7 @@ namespace WentzFreunde_Pilot
                 {
                     // Wichtig: DataGridView aktualisieren
                     BussinesLogic.MemberSave.Speichern(members.ToList());
-                    gridMembers.Refresh();
+                    AktualisiereGrid();
                 }
             }
         }
@@ -123,7 +137,7 @@ namespace WentzFreunde_Pilot
             {
                 members.Remove(selected);
                 BussinesLogic.MemberSave.Speichern(members.ToList());
-                gridMembers.Refresh();
+                AktualisiereGrid();
 
                 MessageBox.Show("Mitglied wurde gelöscht.");
             }
@@ -207,7 +221,20 @@ namespace WentzFreunde_Pilot
                             IBAN = row.Cell(15).GetString().Trim(),
                             BIC = row.Cell(16).GetString().Trim(),
                             Email = row.Cell(18).GetString().Trim(),
-                            Eintritt = row.Cell(17).GetString().Trim().PadLeft(5, '0')
+                            Eintritt = row.Cell(17).GetString().Trim().PadLeft(5, '0'),
+                            Mitarbeit = (row.Cell(19).GetString().Trim() == "ja"),
+
+                            /*
+                            Mandatsdatum = DateTime.TryParseExact(
+                                row.Cell(20).GetString().Trim(),
+                                new[] { "dd.MM.yyyy", "d.M.yyyy", "yyyy-MM-dd" },
+                                CultureInfo.InvariantCulture,
+                                DateTimeStyles.None,
+                                out DateTime mandatsDatum) ? mandatsDatum : DateTime.MinValue,
+                            Mandatsreferenz = row.Cell(21).GetString().Trim()
+                            */
+                            Mandatsdatum = DateTime.Now,
+                            Mandatsreferenz = row.Cell(1).GetString().Trim().PadLeft(7, '0')
                         };
 
                         members.Add(mitglied);
@@ -229,7 +256,7 @@ namespace WentzFreunde_Pilot
                 }
 
                 BussinesLogic.MemberSave.Speichern(members.ToList());
-                gridMembers.Refresh();
+                AktualisiereGrid();
 
                 MessageBox.Show(
                     $"{importiert} Mitglieder wurden importiert.",
@@ -313,6 +340,83 @@ namespace WentzFreunde_Pilot
         private void gridMembers_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             this.btnEdit_Click(sender, e);
+        }
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            string suche = txtSearch.Text.Trim().ToLower();
+
+            if (string.IsNullOrWhiteSpace(suche))
+            {
+                memberBindingSource.DataSource = members;
+            }
+            else
+            {
+                var gefiltert = members
+                    .Where(m =>
+                        (m.Mitgliedernummer ?? "").ToLower().Contains(suche) ||
+                        (m.Name ?? "").ToLower().Contains(suche) ||
+                        (m.Vorname ?? "").ToLower().Contains(suche) ||
+                        (m.Wohnort ?? "").ToLower().Contains(suche) ||
+                        (m.Email ?? "").ToLower().Contains(suche) ||
+                        (m.IBAN ?? "").ToLower().Contains(suche))
+                    .ToList();
+
+                memberBindingSource.DataSource = gefiltert;
+            }
+
+            gridMembers.Refresh();
+        }
+
+        private void AktualisiereGrid()
+        {
+            memberBindingSource.DataSource = null;
+            memberBindingSource.DataSource = members;
+            gridMembers.Refresh();
+        }
+
+        private void sepaXMLExportierenToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            using SaveFileDialog dialog = new SaveFileDialog();
+
+            dialog.Filter = "SEPA XML-Datei (*.xml)|*.xml";
+            dialog.Title = "SEPA-Lastschriftdatei speichern";
+            dialog.FileName = $"SEPA_Lastschrift_{DateTime.Now:yyyyMMdd}.xml";
+
+            if (dialog.ShowDialog() != DialogResult.OK)
+                return;
+
+            try
+            {
+                SepaExport.ErstelleSepaLastschrift(dialog.FileName, members.ToList(), sepaConfig);
+
+                MessageBox.Show(
+                    "Die SEPA-XML-Datei wurde erfolgreich erstellt.",
+                    "SEPA-Export",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(
+                    "Fehler beim Erstellen der SEPA-Datei:\n\n" + ex.Message,
+                    "SEPA-Fehler",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+            }
+        }
+
+        private void datenDesCreditorsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            using (SepaConfigForm form = new SepaConfigForm(sepaConfig))
+            {
+                if (form.ShowDialog() == DialogResult.OK)
+                {
+                    BussinesLogic.SepaConfigSave.Speichern(sepaConfig);
+
+                    MessageBox.Show("SEPA-Einstellungen wurden gespeichert.");
+                }
+            }
         }
     }
 }

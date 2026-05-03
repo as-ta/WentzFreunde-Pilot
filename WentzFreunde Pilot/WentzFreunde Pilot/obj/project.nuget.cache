@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "E2dXLwL0/YM=",
+  "dgSpecHash": "nDMbet0dhXk=",
   "success": true,
-  "projectFilePath": "D:\\GIT\\WentzFreunde Pilot\\WentzFreunde Pilot\\WentzFreunde Pilot\\WentzFreunde Pilot.csproj",
+  "projectFilePath": "D:\\GIT\\WentzFreunde-Pilot\\WentzFreunde Pilot\\WentzFreunde Pilot\\WentzFreunde Pilot.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ta\\.nuget\\packages\\closedxml\\0.105.0\\closedxml.0.105.0.nupkg.sha512",
     "C:\\Users\\ta\\.nuget\\packages\\closedxml.parser\\2.0.0\\closedxml.parser.2.0.0.nupkg.sha512",

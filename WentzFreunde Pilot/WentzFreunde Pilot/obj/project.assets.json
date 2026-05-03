@@ -303,11 +303,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GIT\\WentzFreunde Pilot\\WentzFreunde Pilot\\WentzFreunde Pilot\\WentzFreunde Pilot.csproj",
+      "projectUniqueName": "D:\\GIT\\WentzFreunde-Pilot\\WentzFreunde Pilot\\WentzFreunde Pilot\\WentzFreunde Pilot.csproj",
       "projectName": "WentzFreunde Pilot",
-      "projectPath": "D:\\GIT\\WentzFreunde Pilot\\WentzFreunde Pilot\\WentzFreunde Pilot\\WentzFreunde Pilot.csproj",
+      "projectPath": "D:\\GIT\\WentzFreunde-Pilot\\WentzFreunde Pilot\\WentzFreunde Pilot\\WentzFreunde Pilot.csproj",
       "packagesPath": "C:\\Users\\ta\\.nuget\\packages\\",
-      "outputPath": "D:\\GIT\\WentzFreunde Pilot\\WentzFreunde Pilot\\WentzFreunde Pilot\\obj\\",
+      "outputPath": "D:\\GIT\\WentzFreunde-Pilot\\WentzFreunde Pilot\\WentzFreunde Pilot\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

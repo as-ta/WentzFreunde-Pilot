@@ -43,6 +43,10 @@
             bankingToolStripMenuItem = new ToolStripMenuItem();
             sepaXMLExportierenToolStripMenuItem = new ToolStripMenuItem();
             gridMembers = new DataGridView();
+            lblSearch = new Label();
+            txtSearch = new TextBox();
+            einstellungenToolStripMenuItem = new ToolStripMenuItem();
+            datenDesCreditorsToolStripMenuItem = new ToolStripMenuItem();
             statusMain.SuspendLayout();
             menMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)gridMembers).BeginInit();
@@ -78,7 +82,7 @@
             // menMain
             // 
             menMain.ImageScalingSize = new Size(32, 32);
-            menMain.Items.AddRange(new ToolStripItem[] { dateiToolStripMenuItem, bankingToolStripMenuItem });
+            menMain.Items.AddRange(new ToolStripItem[] { dateiToolStripMenuItem, bankingToolStripMenuItem, einstellungenToolStripMenuItem });
             menMain.Location = new Point(0, 0);
             menMain.Name = "menMain";
             menMain.Size = new Size(1430, 42);
@@ -144,24 +148,59 @@
             sepaXMLExportierenToolStripMenuItem.Name = "sepaXMLExportierenToolStripMenuItem";
             sepaXMLExportierenToolStripMenuItem.Size = new Size(385, 44);
             sepaXMLExportierenToolStripMenuItem.Text = "Sepa-XML exportieren";
+            sepaXMLExportierenToolStripMenuItem.Click += sepaXMLExportierenToolStripMenuItem_Click;
             // 
             // gridMembers
             // 
             gridMembers.AllowUserToOrderColumns = true;
             gridMembers.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             gridMembers.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            gridMembers.Location = new Point(0, 40);
+            gridMembers.Location = new Point(0, 121);
             gridMembers.Name = "gridMembers";
             gridMembers.RowHeadersWidth = 82;
-            gridMembers.Size = new Size(1430, 758);
+            gridMembers.Size = new Size(1430, 677);
             gridMembers.TabIndex = 2;
             gridMembers.CellDoubleClick += gridMembers_CellDoubleClick;
+            // 
+            // lblSearch
+            // 
+            lblSearch.AutoSize = true;
+            lblSearch.Location = new Point(12, 62);
+            lblSearch.Name = "lblSearch";
+            lblSearch.Size = new Size(79, 32);
+            lblSearch.TabIndex = 3;
+            lblSearch.Text = "Suche";
+            // 
+            // txtSearch
+            // 
+            txtSearch.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            txtSearch.Location = new Point(97, 55);
+            txtSearch.Name = "txtSearch";
+            txtSearch.Size = new Size(1321, 39);
+            txtSearch.TabIndex = 4;
+            txtSearch.TextChanged += txtSearch_TextChanged;
+            // 
+            // einstellungenToolStripMenuItem
+            // 
+            einstellungenToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { datenDesCreditorsToolStripMenuItem });
+            einstellungenToolStripMenuItem.Name = "einstellungenToolStripMenuItem";
+            einstellungenToolStripMenuItem.Size = new Size(178, 38);
+            einstellungenToolStripMenuItem.Text = "Einstellungen";
+            // 
+            // datenDesCreditorsToolStripMenuItem
+            // 
+            datenDesCreditorsToolStripMenuItem.Name = "datenDesCreditorsToolStripMenuItem";
+            datenDesCreditorsToolStripMenuItem.Size = new Size(359, 44);
+            datenDesCreditorsToolStripMenuItem.Text = "Daten des Creditors";
+            datenDesCreditorsToolStripMenuItem.Click += datenDesCreditorsToolStripMenuItem_Click;
             // 
             // FrmMain
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1430, 843);
+            Controls.Add(txtSearch);
+            Controls.Add(lblSearch);
             Controls.Add(gridMembers);
             Controls.Add(statusMain);
             Controls.Add(menMain);
@@ -195,5 +234,9 @@
         private ToolStripMenuItem sepaXMLExportierenToolStripMenuItem;
         private ToolStripProgressBar progressStatus;
         private ToolStripStatusLabel lblVersion;
+        private Label lblSearch;
+        private TextBox txtSearch;
+        private ToolStripMenuItem einstellungenToolStripMenuItem;
+        private ToolStripMenuItem datenDesCreditorsToolStripMenuItem;
     }
 }
