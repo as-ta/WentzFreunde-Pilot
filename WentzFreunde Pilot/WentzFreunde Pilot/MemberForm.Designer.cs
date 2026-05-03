@@ -460,9 +460,9 @@ namespace WentzFreunde_Pilot
             lblMandatsreferenz.Font = new Font("Segoe UI", 9F);
             lblMandatsreferenz.Location = new Point(0, 189);
             lblMandatsreferenz.Name = "lblMandatsreferenz";
-            lblMandatsreferenz.Size = new Size(67, 32);
+            lblMandatsreferenz.Size = new Size(194, 32);
             lblMandatsreferenz.TabIndex = 19;
-            lblMandatsreferenz.Text = "IBAN";
+            lblMandatsreferenz.Text = "Mandatsreferenz";
             // 
             // txtMandatsreferenz
             // 
