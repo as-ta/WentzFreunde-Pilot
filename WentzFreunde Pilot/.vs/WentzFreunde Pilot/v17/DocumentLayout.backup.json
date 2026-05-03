@@ -1,0 +1,155 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\GIT\\WentzFreunde Pilot\\WentzFreunde Pilot\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6344A292-23F2-4449-A93C-92112E685629}|WentzFreunde Pilot\\WentzFreunde Pilot.csproj|D:\\GIT\\WentzFreunde Pilot\\WentzFreunde Pilot\\wentzfreunde pilot\\memberform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6344A292-23F2-4449-A93C-92112E685629}|WentzFreunde Pilot\\WentzFreunde Pilot.csproj|solutionrelative:wentzfreunde pilot\\memberform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6344A292-23F2-4449-A93C-92112E685629}|WentzFreunde Pilot\\WentzFreunde Pilot.csproj|d:\\git\\wentzfreunde pilot\\wentzfreunde pilot\\wentzfreunde pilot\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6344A292-23F2-4449-A93C-92112E685629}|WentzFreunde Pilot\\WentzFreunde Pilot.csproj|solutionrelative:wentzfreunde pilot\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6344A292-23F2-4449-A93C-92112E685629}|WentzFreunde Pilot\\WentzFreunde Pilot.csproj|d:\\git\\wentzfreunde pilot\\wentzfreunde pilot\\wentzfreunde pilot\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6344A292-23F2-4449-A93C-92112E685629}|WentzFreunde Pilot\\WentzFreunde Pilot.csproj|solutionrelative:wentzfreunde pilot\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6344A292-23F2-4449-A93C-92112E685629}|WentzFreunde Pilot\\WentzFreunde Pilot.csproj|d:\\git\\wentzfreunde pilot\\wentzfreunde pilot\\wentzfreunde pilot\\memberform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6344A292-23F2-4449-A93C-92112E685629}|WentzFreunde Pilot\\WentzFreunde Pilot.csproj|solutionrelative:wentzfreunde pilot\\memberform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6344A292-23F2-4449-A93C-92112E685629}|WentzFreunde Pilot\\WentzFreunde Pilot.csproj|d:\\git\\wentzfreunde pilot\\wentzfreunde pilot\\wentzfreunde pilot\\memberform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6344A292-23F2-4449-A93C-92112E685629}|WentzFreunde Pilot\\WentzFreunde Pilot.csproj|solutionrelative:wentzfreunde pilot\\memberform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6344A292-23F2-4449-A93C-92112E685629}|WentzFreunde Pilot\\WentzFreunde Pilot.csproj|d:\\git\\wentzfreunde pilot\\wentzfreunde pilot\\wentzfreunde pilot\\data\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6344A292-23F2-4449-A93C-92112E685629}|WentzFreunde Pilot\\WentzFreunde Pilot.csproj|solutionrelative:wentzfreunde pilot\\data\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6344A292-23F2-4449-A93C-92112E685629}|WentzFreunde Pilot\\WentzFreunde Pilot.csproj|d:\\git\\wentzfreunde pilot\\wentzfreunde pilot\\wentzfreunde pilot\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6344A292-23F2-4449-A93C-92112E685629}|WentzFreunde Pilot\\WentzFreunde Pilot.csproj|solutionrelative:wentzfreunde pilot\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6344A292-23F2-4449-A93C-92112E685629}|WentzFreunde Pilot\\WentzFreunde Pilot.csproj|d:\\git\\wentzfreunde pilot\\wentzfreunde pilot\\wentzfreunde pilot\\bussineslogic\\membersave.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6344A292-23F2-4449-A93C-92112E685629}|WentzFreunde Pilot\\WentzFreunde Pilot.csproj|solutionrelative:wentzfreunde pilot\\bussineslogic\\membersave.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "D:\\GIT\\WentzFreunde Pilot\\WentzFreunde Pilot\\WentzFreunde Pilot\\Form1.cs",
+              "RelativeDocumentMoniker": "WentzFreunde Pilot\\Form1.cs",
+              "ToolTip": "D:\\GIT\\WentzFreunde Pilot\\WentzFreunde Pilot\\WentzFreunde Pilot\\Form1.cs",
+              "RelativeToolTip": "WentzFreunde Pilot\\Form1.cs",
+              "ViewState": "AgIAALIAAAAAAAAAAAAnwNEAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-03T14:15:46.057Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MemberForm.Designer.cs",
+              "DocumentMoniker": "D:\\GIT\\WentzFreunde Pilot\\WentzFreunde Pilot\\WentzFreunde Pilot\\MemberForm.Designer.cs",
+              "RelativeDocumentMoniker": "WentzFreunde Pilot\\MemberForm.Designer.cs",
+              "ToolTip": "D:\\GIT\\WentzFreunde Pilot\\WentzFreunde Pilot\\WentzFreunde Pilot\\MemberForm.Designer.cs",
+              "RelativeToolTip": "WentzFreunde Pilot\\MemberForm.Designer.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAQwFwAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-03T14:33:10.767Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs [Entwurf]",
+              "DocumentMoniker": "D:\\GIT\\WentzFreunde Pilot\\WentzFreunde Pilot\\WentzFreunde Pilot\\Form1.cs",
+              "RelativeDocumentMoniker": "WentzFreunde Pilot\\Form1.cs",
+              "ToolTip": "D:\\GIT\\WentzFreunde Pilot\\WentzFreunde Pilot\\WentzFreunde Pilot\\Form1.cs [Entwurf]",
+              "RelativeToolTip": "WentzFreunde Pilot\\Form1.cs [Entwurf]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-03T13:58:36.541Z",
+              "EditorCaption": " [Entwurf]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MemberForm.cs [Entwurf]",
+              "DocumentMoniker": "D:\\GIT\\WentzFreunde Pilot\\WentzFreunde Pilot\\WentzFreunde Pilot\\MemberForm.cs",
+              "RelativeDocumentMoniker": "WentzFreunde Pilot\\MemberForm.cs",
+              "ToolTip": "D:\\GIT\\WentzFreunde Pilot\\WentzFreunde Pilot\\WentzFreunde Pilot\\MemberForm.cs [Entwurf]",
+              "RelativeToolTip": "WentzFreunde Pilot\\MemberForm.cs [Entwurf]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-03T14:31:29.785Z",
+              "EditorCaption": " [Entwurf]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Member.cs",
+              "DocumentMoniker": "D:\\GIT\\WentzFreunde Pilot\\WentzFreunde Pilot\\WentzFreunde Pilot\\Data\\Member.cs",
+              "RelativeDocumentMoniker": "WentzFreunde Pilot\\Data\\Member.cs",
+              "ToolTip": "D:\\GIT\\WentzFreunde Pilot\\WentzFreunde Pilot\\WentzFreunde Pilot\\Data\\Member.cs",
+              "RelativeToolTip": "WentzFreunde Pilot\\Data\\Member.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-03T14:08:34.68Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MemberForm.cs",
+              "DocumentMoniker": "D:\\GIT\\WentzFreunde Pilot\\WentzFreunde Pilot\\WentzFreunde Pilot\\MemberForm.cs",
+              "RelativeDocumentMoniker": "WentzFreunde Pilot\\MemberForm.cs",
+              "ToolTip": "D:\\GIT\\WentzFreunde Pilot\\WentzFreunde Pilot\\WentzFreunde Pilot\\MemberForm.cs",
+              "RelativeToolTip": "WentzFreunde Pilot\\MemberForm.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAMwBoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-03T20:11:23.087Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "D:\\GIT\\WentzFreunde Pilot\\WentzFreunde Pilot\\WentzFreunde Pilot\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "WentzFreunde Pilot\\Form1.Designer.cs",
+              "ToolTip": "D:\\GIT\\WentzFreunde Pilot\\WentzFreunde Pilot\\WentzFreunde Pilot\\Form1.Designer.cs",
+              "RelativeToolTip": "WentzFreunde Pilot\\Form1.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-03T19:57:13.238Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MemberSave.cs",
+              "DocumentMoniker": "D:\\GIT\\WentzFreunde Pilot\\WentzFreunde Pilot\\WentzFreunde Pilot\\BussinesLogic\\MemberSave.cs",
+              "RelativeDocumentMoniker": "WentzFreunde Pilot\\BussinesLogic\\MemberSave.cs",
+              "ToolTip": "D:\\GIT\\WentzFreunde Pilot\\WentzFreunde Pilot\\WentzFreunde Pilot\\BussinesLogic\\MemberSave.cs",
+              "RelativeToolTip": "WentzFreunde Pilot\\BussinesLogic\\MemberSave.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACkAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-03T14:11:33.085Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

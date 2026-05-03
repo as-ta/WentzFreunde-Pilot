@@ -1,0 +1,27 @@
+D:\GIT\WentzFreunde Pilot\WentzFreunde Pilot\WentzFreunde Pilot\bin\Debug\net8.0-windows\WentzFreunde Pilot.exe
+D:\GIT\WentzFreunde Pilot\WentzFreunde Pilot\WentzFreunde Pilot\bin\Debug\net8.0-windows\WentzFreunde Pilot.deps.json
+D:\GIT\WentzFreunde Pilot\WentzFreunde Pilot\WentzFreunde Pilot\bin\Debug\net8.0-windows\WentzFreunde Pilot.runtimeconfig.json
+D:\GIT\WentzFreunde Pilot\WentzFreunde Pilot\WentzFreunde Pilot\bin\Debug\net8.0-windows\WentzFreunde Pilot.dll
+D:\GIT\WentzFreunde Pilot\WentzFreunde Pilot\WentzFreunde Pilot\bin\Debug\net8.0-windows\WentzFreunde Pilot.pdb
+D:\GIT\WentzFreunde Pilot\WentzFreunde Pilot\WentzFreunde Pilot\obj\Debug\net8.0-windows\WentzFreunde_Pilot.FrmMain.resources
+D:\GIT\WentzFreunde Pilot\WentzFreunde Pilot\WentzFreunde Pilot\obj\Debug\net8.0-windows\WentzFreunde Pilot.csproj.GenerateResource.cache
+D:\GIT\WentzFreunde Pilot\WentzFreunde Pilot\WentzFreunde Pilot\obj\Debug\net8.0-windows\WentzFreunde Pilot.GeneratedMSBuildEditorConfig.editorconfig
+D:\GIT\WentzFreunde Pilot\WentzFreunde Pilot\WentzFreunde Pilot\obj\Debug\net8.0-windows\WentzFreunde Pilot.AssemblyInfoInputs.cache
+D:\GIT\WentzFreunde Pilot\WentzFreunde Pilot\WentzFreunde Pilot\obj\Debug\net8.0-windows\WentzFreunde Pilot.AssemblyInfo.cs
+D:\GIT\WentzFreunde Pilot\WentzFreunde Pilot\WentzFreunde Pilot\obj\Debug\net8.0-windows\WentzFreunde Pilot.csproj.CoreCompileInputs.cache
+D:\GIT\WentzFreunde Pilot\WentzFreunde Pilot\WentzFreunde Pilot\obj\Debug\net8.0-windows\WentzFreunde Pilot.dll
+D:\GIT\WentzFreunde Pilot\WentzFreunde Pilot\WentzFreunde Pilot\obj\Debug\net8.0-windows\refint\WentzFreunde Pilot.dll
+D:\GIT\WentzFreunde Pilot\WentzFreunde Pilot\WentzFreunde Pilot\obj\Debug\net8.0-windows\WentzFreunde Pilot.pdb
+D:\GIT\WentzFreunde Pilot\WentzFreunde Pilot\WentzFreunde Pilot\obj\Debug\net8.0-windows\WentzFreunde Pilot.genruntimeconfig.cache
+D:\GIT\WentzFreunde Pilot\WentzFreunde Pilot\WentzFreunde Pilot\obj\Debug\net8.0-windows\ref\WentzFreunde Pilot.dll
+D:\GIT\WentzFreunde Pilot\WentzFreunde Pilot\WentzFreunde Pilot\obj\Debug\net8.0-windows\WentzFreunde_Pilot.formMember.resources
+D:\GIT\WentzFreunde Pilot\WentzFreunde Pilot\WentzFreunde Pilot\bin\Debug\net8.0-windows\ClosedXML.dll
+D:\GIT\WentzFreunde Pilot\WentzFreunde Pilot\WentzFreunde Pilot\bin\Debug\net8.0-windows\ClosedXML.Parser.dll
+D:\GIT\WentzFreunde Pilot\WentzFreunde Pilot\WentzFreunde Pilot\bin\Debug\net8.0-windows\DocumentFormat.OpenXml.dll
+D:\GIT\WentzFreunde Pilot\WentzFreunde Pilot\WentzFreunde Pilot\bin\Debug\net8.0-windows\DocumentFormat.OpenXml.Framework.dll
+D:\GIT\WentzFreunde Pilot\WentzFreunde Pilot\WentzFreunde Pilot\bin\Debug\net8.0-windows\ExcelNumberFormat.dll
+D:\GIT\WentzFreunde Pilot\WentzFreunde Pilot\WentzFreunde Pilot\bin\Debug\net8.0-windows\RBush.dll
+D:\GIT\WentzFreunde Pilot\WentzFreunde Pilot\WentzFreunde Pilot\bin\Debug\net8.0-windows\SixLabors.Fonts.dll
+D:\GIT\WentzFreunde Pilot\WentzFreunde Pilot\WentzFreunde Pilot\bin\Debug\net8.0-windows\System.IO.Packaging.dll
+D:\GIT\WentzFreunde Pilot\WentzFreunde Pilot\WentzFreunde Pilot\obj\Debug\net8.0-windows\WentzFreunde Pilot.csproj.AssemblyReference.cache
+D:\GIT\WentzFreunde Pilot\WentzFreunde Pilot\WentzFreunde Pilot\obj\Debug\net8.0-windows\WentzFre.AEED2B46.Up2Date
