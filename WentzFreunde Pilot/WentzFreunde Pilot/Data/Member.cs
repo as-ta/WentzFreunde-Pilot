@@ -31,8 +31,6 @@ namespace WentzFreunde_Pilot.Data
 
         public string Email { get; set; } = "";
 
-        public string Eintritt { get; set; } = "";
-
         public bool Mitarbeit { get; set; } = false;
 
         public string Mandatsreferenz { get; set; } = "";

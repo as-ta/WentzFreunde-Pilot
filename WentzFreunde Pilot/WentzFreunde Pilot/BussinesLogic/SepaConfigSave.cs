@@ -35,5 +35,10 @@ namespace WentzFreunde_Pilot.BussinesLogic
             using FileStream stream = new FileStream(Pfad, FileMode.Create);
             serializer.Serialize(stream, config);
         }
+
+        public static string GetDateiPfad()
+        {
+            return Pfad;
+        }
     }
 }

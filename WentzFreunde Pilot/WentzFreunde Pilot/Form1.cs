@@ -3,6 +3,8 @@ using System.ComponentModel;
 using System.Linq;
 using ClosedXML.Excel;
 using System.Globalization;
+using System.IO;
+using System.IO.Compression;
 
 namespace WentzFreunde_Pilot
 {
@@ -76,8 +78,7 @@ namespace WentzFreunde_Pilot
 
             Data.Member neuesMitglied = new Data.Member
             {
-                Mitgliedernummer = naechsteNummer.ToString("D7"),
-                Eintritt = "00000"
+                Mitgliedernummer = naechsteNummer.ToString("D7")
             };
 
             using (formMember form = new formMember(neuesMitglied))
@@ -221,7 +222,6 @@ namespace WentzFreunde_Pilot
                             IBAN = row.Cell(15).GetString().Trim(),
                             BIC = row.Cell(16).GetString().Trim(),
                             Email = row.Cell(18).GetString().Trim(),
-                            Eintritt = row.Cell(17).GetString().Trim().PadLeft(5, '0'),
                             Mitarbeit = (row.Cell(19).GetString().Trim() == "ja"),
 
                             /*
@@ -233,7 +233,7 @@ namespace WentzFreunde_Pilot
                                 out DateTime mandatsDatum) ? mandatsDatum : DateTime.MinValue,
                             Mandatsreferenz = row.Cell(21).GetString().Trim()
                             */
-                            Mandatsdatum = DateTime.Now,
+                            Mandatsdatum = row.Cell(17).GetDateTime().Date,
                             Mandatsreferenz = row.Cell(1).GetString().Trim().PadLeft(7, '0')
                         };
 
@@ -377,32 +377,54 @@ namespace WentzFreunde_Pilot
 
         private void sepaXMLExportierenToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            using SaveFileDialog dialog = new SaveFileDialog();
-
-            dialog.Filter = "SEPA XML-Datei (*.xml)|*.xml";
-            dialog.Title = "SEPA-Lastschriftdatei speichern";
-            dialog.FileName = $"SEPA_Lastschrift_{DateTime.Now:yyyyMMdd}.xml";
-
-            if (dialog.ShowDialog() != DialogResult.OK)
-                return;
-
-            try
+            using (SaveFileDialog dialog = new SaveFileDialog())
             {
-                SepaExport.ErstelleSepaLastschrift(dialog.FileName, members.ToList(), sepaConfig);
+                dialog.Filter = "SEPA XML-Datei (*.xml)|*.xml";
+                dialog.Title = "SEPA-Lastschriftdatei speichern";
+                dialog.FileName = $"SEPA_Lastschrift_{DateTime.Now:yyyyMMdd}.xml";
 
-                MessageBox.Show(
-                    "Die SEPA-XML-Datei wurde erfolgreich erstellt.",
-                    "SEPA-Export",
-                    MessageBoxButtons.OK,
-                    MessageBoxIcon.Information);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(
-                    "Fehler beim Erstellen der SEPA-Datei:\n\n" + ex.Message,
-                    "SEPA-Fehler",
-                    MessageBoxButtons.OK,
-                    MessageBoxIcon.Error);
+                if (dialog.ShowDialog() != DialogResult.OK)
+                    return;
+
+                try
+                {
+                    var exportResult = SepaExport.ErstelleSepaLastschrift(
+                        dialog.FileName,
+                        members.ToList(),
+                        sepaConfig);
+
+                    string meldung =
+                        $"Die SEPA-XML-Datei wurde erfolgreich erstellt.\n\n" +
+                        $"Exportiert: {exportResult.Exportiert}\n" +
+                        $"Ausgelassen: {exportResult.Ausgelassen}";
+
+                    if (exportResult.Warnungen.Count > 0)
+                    {
+                        meldung += "\n\nNicht exportierte Mitglieder:\n" +
+                                   string.Join("\n", exportResult.Warnungen.Take(20));
+
+                        if (exportResult.Warnungen.Count > 20)
+                        {
+                            meldung += $"\n... und {exportResult.Warnungen.Count - 20} weitere.";
+                        }
+                    }
+
+                    MessageBox.Show(
+                        meldung,
+                        "SEPA-Export",
+                        MessageBoxButtons.OK,
+                        exportResult.Ausgelassen > 0
+                            ? MessageBoxIcon.Warning
+                            : MessageBoxIcon.Information);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(
+                        "Fehler beim Erstellen der SEPA-Datei:\n\n" + ex.Message,
+                        "SEPA-Fehler",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Error);
+                }
             }
         }
 
@@ -417,6 +439,189 @@ namespace WentzFreunde_Pilot
                     MessageBox.Show("SEPA-Einstellungen wurden gespeichert.");
                 }
             }
+        }
+
+        private void datensicherungToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            using FolderBrowserDialog dialog = new FolderBrowserDialog();
+
+            dialog.Description = "Zielordner für die Datensicherung auswählen";
+
+            if (dialog.ShowDialog() != DialogResult.OK)
+                return;
+
+            try
+            {
+                string zielOrdner = dialog.SelectedPath;
+
+                string backupDatei = Path.Combine(
+                    zielOrdner,
+                    $"Mitgliederverwaltung_Backup_{DateTime.Now:yyyyMMdd_HHmmss}.zip"
+                );
+
+                string mitgliederXml = BussinesLogic.MemberSave.GetDateiPfad();
+                string sepaConfigXml = BussinesLogic.SepaConfigSave.GetDateiPfad();
+
+                /*
+                MessageBox.Show(
+                    "Verwendete Dateien:\n\n" +
+                    "Mitglieder:\n" + mitgliederXml + "\n\n" +
+                    "SEPA-Konfiguration:\n" + sepaConfigXml,
+                    "Debug: Dateipfade",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information
+                );
+                */
+
+
+                using FileStream zipStream = new FileStream(backupDatei, FileMode.Create);
+                using ZipArchive zip = new ZipArchive(zipStream, ZipArchiveMode.Create);
+
+                FuegeDateiZuZipHinzu(zip, mitgliederXml, "mitglieder.xml");
+                FuegeDateiZuZipHinzu(zip, sepaConfigXml, "sepa_config.xml");
+
+                MessageBox.Show(
+                    "Die Datensicherung wurde erfolgreich erstellt:\n\n" + backupDatei,
+                    "Datensicherung",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(
+                    "Fehler bei der Datensicherung:\n\n" + ex.Message,
+                    "Datensicherung",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+            }
+        }
+        private void FuegeDateiZuZipHinzu(ZipArchive zip, string dateipfad, string nameImZip)
+        {
+            if (!File.Exists(dateipfad))
+                throw new FileNotFoundException("Datei wurde nicht gefunden.", dateipfad);
+
+            zip.CreateEntryFromFile(dateipfad, nameImZip);
+        }
+
+        private void datensicherungImportierenToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DialogResult warnung = MessageBox.Show(
+                "Achtung!\n\n" +
+                "Beim Einspielen der Datensicherung wird der aktuelle Datenbestand überschrieben.\n\n" +
+                "Diese Aktion kann nicht rückgängig gemacht werden.\n\n" +
+                "Möchten Sie wirklich fortfahren?",
+                "Datensicherung einspielen",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Warning
+            );
+
+            if (warnung != DialogResult.Yes)
+                return;
+
+            using OpenFileDialog dialog = new OpenFileDialog();
+
+            dialog.Filter = "ZIP-Dateien (*.zip)|*.zip";
+            dialog.Title = "Datensicherung auswählen";
+
+            if (dialog.ShowDialog() != DialogResult.OK)
+                return;
+
+            try
+            {
+                string mitgliederXml = BussinesLogic.MemberSave.GetDateiPfad();
+                string sepaConfigXml = BussinesLogic.SepaConfigSave.GetDateiPfad();
+
+                using ZipArchive zip = ZipFile.OpenRead(dialog.FileName);
+
+                ZipArchiveEntry mitgliederEntry = zip.GetEntry("mitglieder.xml");
+                ZipArchiveEntry sepaConfigEntry = zip.GetEntry("sepa_config.xml");
+
+                if (mitgliederEntry == null || sepaConfigEntry == null)
+                {
+                    MessageBox.Show(
+                        "Die ausgewählte ZIP-Datei ist keine gültige Datensicherung.\n\n" +
+                        "Erwartet werden:\n" +
+                        "• mitglieder.xml\n" +
+                        "• sepa_config.xml",
+                        "Ungültige Datensicherung",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Error);
+
+                    return;
+                }
+
+                // aktuelle Dateien überschreiben
+                mitgliederEntry.ExtractToFile(mitgliederXml, true);
+                sepaConfigEntry.ExtractToFile(sepaConfigXml, true);
+
+                // Daten neu laden
+                members = new SortableBindingList<Data.Member>(
+                    BussinesLogic.MemberSave.Laden()
+                );
+
+                memberBindingSource.DataSource = members;
+                gridMembers.DataSource = memberBindingSource;
+                gridMembers.Refresh();
+
+                sepaConfig = BussinesLogic.SepaConfigSave.Laden();
+
+                MessageBox.Show(
+                    "Die Datensicherung wurde erfolgreich eingespielt.",
+                    "Datensicherung",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(
+                    "Fehler beim Einspielen der Datensicherung:\n\n" + ex.Message,
+                    "Datensicherung",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+            }
+        }
+
+        private void SepaTestBatchesErzeugen(int startIndex, int anzahl, int batchSize)
+        {
+            using FolderBrowserDialog dialog = new FolderBrowserDialog();
+            dialog.Description = "Ordner für SEPA-Testdateien auswählen";
+
+            if (dialog.ShowDialog() != DialogResult.OK)
+                return;
+
+            var zahlendeMitglieder = members
+                .Where(m => m.Mitgliedsbeitrag > 0 && !string.IsNullOrWhiteSpace(m.IBAN))
+                .ToList();
+
+            var testMitglieder = zahlendeMitglieder
+                .Skip(startIndex)
+                .Take(anzahl)
+                .ToList();
+
+            int batchNummer = 1;
+
+            for (int i = 0; i < testMitglieder.Count; i += batchSize)
+            {
+                var batch = testMitglieder
+                    .Skip(i)
+                    .Take(batchSize)
+                    .ToList();
+
+                string datei = Path.Combine(
+                    dialog.SelectedPath,
+                    $"SEPA_Test_{startIndex + i + 1:D4}_bis_{startIndex + i + batch.Count:D4}.xml");
+
+                SepaExport.ErstelleSepaLastschrift(datei, batch, sepaConfig);
+
+                batchNummer++;
+            }
+
+            MessageBox.Show("Die eingeschränkten SEPA-Testdateien wurden erstellt.");
+        }
+
+        private void sepaBatchesErzeugenDevToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SepaTestBatchesErzeugen(0, 900, 40);
         }
     }
 }

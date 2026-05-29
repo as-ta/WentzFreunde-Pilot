@@ -46,9 +46,10 @@
             // btnOK
             // 
             btnOK.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            btnOK.Location = new Point(1131, 309);
+            btnOK.Location = new Point(1131, 291);
+            btnOK.Margin = new Padding(4, 2, 4, 2);
             btnOK.Name = "btnOK";
-            btnOK.Size = new Size(264, 46);
+            btnOK.Size = new Size(264, 47);
             btnOK.TabIndex = 22;
             btnOK.Text = "Creditor speichern";
             btnOK.UseVisualStyleBackColor = true;
@@ -57,9 +58,10 @@
             // btnAbbrechen
             // 
             btnAbbrechen.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            btnAbbrechen.Location = new Point(958, 309);
+            btnAbbrechen.Location = new Point(958, 291);
+            btnAbbrechen.Margin = new Padding(4, 2, 4, 2);
             btnAbbrechen.Name = "btnAbbrechen";
-            btnAbbrechen.Size = new Size(150, 46);
+            btnAbbrechen.Size = new Size(150, 47);
             btnAbbrechen.TabIndex = 21;
             btnAbbrechen.Text = "Abbrechen";
             btnAbbrechen.UseVisualStyleBackColor = true;
@@ -77,9 +79,11 @@
             grpCreditor.Controls.Add(lblVereinsname);
             grpCreditor.Controls.Add(txtVereinsname);
             grpCreditor.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            grpCreditor.Location = new Point(12, 34);
+            grpCreditor.Location = new Point(11, 34);
+            grpCreditor.Margin = new Padding(4, 2, 4, 2);
             grpCreditor.Name = "grpCreditor";
-            grpCreditor.Size = new Size(1400, 226);
+            grpCreditor.Padding = new Padding(4, 2, 4, 2);
+            grpCreditor.Size = new Size(1400, 235);
             grpCreditor.TabIndex = 23;
             grpCreditor.TabStop = false;
             grpCreditor.Text = "Creditorendaten";
@@ -88,7 +92,8 @@
             // 
             lblCreditorId.AutoSize = true;
             lblCreditorId.Font = new Font("Segoe UI", 9F);
-            lblCreditorId.Location = new Point(0, 144);
+            lblCreditorId.Location = new Point(9, 164);
+            lblCreditorId.Margin = new Padding(4, 0, 4, 0);
             lblCreditorId.Name = "lblCreditorId";
             lblCreditorId.Size = new Size(150, 32);
             lblCreditorId.TabIndex = 14;
@@ -97,7 +102,8 @@
             // txtCreditorId
             // 
             txtCreditorId.Font = new Font("Segoe UI", 9F);
-            txtCreditorId.Location = new Point(219, 141);
+            txtCreditorId.Location = new Point(219, 158);
+            txtCreditorId.Margin = new Padding(4, 2, 4, 2);
             txtCreditorId.Name = "txtCreditorId";
             txtCreditorId.Size = new Size(1154, 39);
             txtCreditorId.TabIndex = 18;
@@ -106,7 +112,8 @@
             // 
             lblBIC.AutoSize = true;
             lblBIC.Font = new Font("Segoe UI", 9F);
-            lblBIC.Location = new Point(747, 99);
+            lblBIC.Location = new Point(882, 111);
+            lblBIC.Margin = new Padding(4, 0, 4, 0);
             lblBIC.Name = "lblBIC";
             lblBIC.Size = new Size(49, 32);
             lblBIC.TabIndex = 12;
@@ -115,7 +122,8 @@
             // txtBIC
             // 
             txtBIC.Font = new Font("Segoe UI", 9F);
-            txtBIC.Location = new Point(936, 96);
+            txtBIC.Location = new Point(936, 105);
+            txtBIC.Margin = new Padding(4, 2, 4, 2);
             txtBIC.Name = "txtBIC";
             txtBIC.Size = new Size(437, 39);
             txtBIC.TabIndex = 17;
@@ -124,7 +132,8 @@
             // 
             lblIBAN.AutoSize = true;
             lblIBAN.Font = new Font("Segoe UI", 9F);
-            lblIBAN.Location = new Point(0, 99);
+            lblIBAN.Location = new Point(9, 111);
+            lblIBAN.Margin = new Padding(4, 0, 4, 0);
             lblIBAN.Name = "lblIBAN";
             lblIBAN.Size = new Size(67, 32);
             lblIBAN.TabIndex = 10;
@@ -133,16 +142,18 @@
             // txtIBAN
             // 
             txtIBAN.Font = new Font("Segoe UI", 9F);
-            txtIBAN.Location = new Point(219, 96);
+            txtIBAN.Location = new Point(219, 105);
+            txtIBAN.Margin = new Padding(4, 2, 4, 2);
             txtIBAN.Name = "txtIBAN";
-            txtIBAN.Size = new Size(437, 39);
+            txtIBAN.Size = new Size(595, 39);
             txtIBAN.TabIndex = 16;
             // 
             // lblVereinsname
             // 
             lblVereinsname.AutoSize = true;
             lblVereinsname.Font = new Font("Segoe UI", 9F);
-            lblVereinsname.Location = new Point(0, 54);
+            lblVereinsname.Location = new Point(9, 58);
+            lblVereinsname.Margin = new Padding(4, 0, 4, 0);
             lblVereinsname.Name = "lblVereinsname";
             lblVereinsname.Size = new Size(151, 32);
             lblVereinsname.TabIndex = 6;
@@ -152,6 +163,7 @@
             // 
             txtVereinsname.Font = new Font("Segoe UI", 9F);
             txtVereinsname.Location = new Point(219, 51);
+            txtVereinsname.Margin = new Padding(4, 2, 4, 2);
             txtVereinsname.Name = "txtVereinsname";
             txtVereinsname.Size = new Size(1154, 39);
             txtVereinsname.TabIndex = 14;
@@ -160,17 +172,18 @@
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1424, 379);
+            ClientSize = new Size(1415, 361);
             Controls.Add(grpCreditor);
             Controls.Add(btnOK);
             Controls.Add(btnAbbrechen);
             Icon = (Icon)resources.GetObject("$this.Icon");
+            Margin = new Padding(4, 2, 4, 2);
             MaximizeBox = false;
-            MaximumSize = new Size(1450, 450);
+            MaximumSize = new Size(1441, 432);
             MinimizeBox = false;
-            MinimumSize = new Size(1450, 450);
+            MinimumSize = new Size(1441, 432);
             Name = "SepaConfigForm";
-            Text = "SepaConfigForm";
+            Text = "Creditor";
             grpCreditor.ResumeLayout(false);
             grpCreditor.PerformLayout();
             ResumeLayout(false);

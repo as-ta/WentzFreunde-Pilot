@@ -59,7 +59,6 @@ namespace WentzFreunde_Pilot
             txtBIC.Text = Mitglied.BIC;
 
             txtEmail.Text = Mitglied.Email;
-            txtEintritt.Text = Mitglied.Eintritt;
 
             chbMitarbeit.Checked = Mitglied.Mitarbeit;
 
@@ -95,7 +94,6 @@ namespace WentzFreunde_Pilot
             Mitglied.BIC = txtBIC.Text.Trim();
 
             Mitglied.Email = txtEmail.Text.Trim();
-            Mitglied.Eintritt = txtEintritt.Text.Trim();
 
             Mitglied.Mitarbeit = chbMitarbeit.Checked;
 
@@ -166,7 +164,6 @@ namespace WentzFreunde_Pilot
             txtKontoinhaberVorname = new TextBox();
             lblMitgliedernummer = new Label();
             txtMitgliedernummer = new TextBox();
-            txtEintritt = new TextBox();
             lblBeitrag = new Label();
             txtMitgliedsbeitrag = new TextBox();
             lblEuro = new Label();
@@ -178,9 +175,10 @@ namespace WentzFreunde_Pilot
             // btnAbbrechen
             // 
             btnAbbrechen.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            btnAbbrechen.Location = new Point(958, 759);
+            btnAbbrechen.Location = new Point(958, 832);
+            btnAbbrechen.Margin = new Padding(4, 2, 4, 2);
             btnAbbrechen.Name = "btnAbbrechen";
-            btnAbbrechen.Size = new Size(150, 46);
+            btnAbbrechen.Size = new Size(150, 47);
             btnAbbrechen.TabIndex = 19;
             btnAbbrechen.Text = "Abbrechen";
             btnAbbrechen.UseVisualStyleBackColor = true;
@@ -189,9 +187,10 @@ namespace WentzFreunde_Pilot
             // btnOK
             // 
             btnOK.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            btnOK.Location = new Point(1131, 759);
+            btnOK.Location = new Point(1131, 832);
+            btnOK.Margin = new Padding(4, 2, 4, 2);
             btnOK.Name = "btnOK";
-            btnOK.Size = new Size(264, 46);
+            btnOK.Size = new Size(264, 47);
             btnOK.TabIndex = 20;
             btnOK.Text = "Mitglied speichern";
             btnOK.UseVisualStyleBackColor = true;
@@ -221,9 +220,11 @@ namespace WentzFreunde_Pilot
             grpPersonal.Controls.Add(lblVorname);
             grpPersonal.Controls.Add(txtVorname);
             grpPersonal.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            grpPersonal.Location = new Point(12, 98);
+            grpPersonal.Location = new Point(11, 98);
+            grpPersonal.Margin = new Padding(4, 2, 4, 2);
             grpPersonal.Name = "grpPersonal";
-            grpPersonal.Size = new Size(1400, 341);
+            grpPersonal.Padding = new Padding(4, 2, 4, 2);
+            grpPersonal.Size = new Size(1400, 403);
             grpPersonal.TabIndex = 3;
             grpPersonal.TabStop = false;
             grpPersonal.Text = "Mitglied";
@@ -232,7 +233,8 @@ namespace WentzFreunde_Pilot
             // 
             lblAnrede2.AutoSize = true;
             lblAnrede2.Font = new Font("Segoe UI", 9F);
-            lblAnrede2.Location = new Point(757, 269);
+            lblAnrede2.Location = new Point(758, 311);
+            lblAnrede2.Margin = new Padding(4, 0, 4, 0);
             lblAnrede2.Name = "lblAnrede2";
             lblAnrede2.Size = new Size(111, 32);
             lblAnrede2.TabIndex = 20;
@@ -242,7 +244,8 @@ namespace WentzFreunde_Pilot
             // 
             lblAnrede.AutoSize = true;
             lblAnrede.Font = new Font("Segoe UI", 9F);
-            lblAnrede.Location = new Point(10, 266);
+            lblAnrede.Location = new Point(11, 311);
+            lblAnrede.Margin = new Padding(4, 0, 4, 0);
             lblAnrede.Name = "lblAnrede";
             lblAnrede.Size = new Size(91, 32);
             lblAnrede.TabIndex = 19;
@@ -252,7 +255,8 @@ namespace WentzFreunde_Pilot
             // 
             cmbAnrede2.Font = new Font("Segoe UI", 9F);
             cmbAnrede2.FormattingEnabled = true;
-            cmbAnrede2.Location = new Point(945, 266);
+            cmbAnrede2.Location = new Point(947, 305);
+            cmbAnrede2.Margin = new Padding(4, 2, 4, 2);
             cmbAnrede2.Name = "cmbAnrede2";
             cmbAnrede2.Size = new Size(437, 40);
             cmbAnrede2.TabIndex = 13;
@@ -261,7 +265,8 @@ namespace WentzFreunde_Pilot
             // 
             cmbAnrede.Font = new Font("Segoe UI", 9F);
             cmbAnrede.FormattingEnabled = true;
-            cmbAnrede.Location = new Point(229, 263);
+            cmbAnrede.Location = new Point(230, 305);
+            cmbAnrede.Margin = new Padding(4, 2, 4, 2);
             cmbAnrede.Name = "cmbAnrede";
             cmbAnrede.Size = new Size(437, 40);
             cmbAnrede.TabIndex = 12;
@@ -270,7 +275,8 @@ namespace WentzFreunde_Pilot
             // 
             lblEmail.AutoSize = true;
             lblEmail.Font = new Font("Segoe UI", 9F);
-            lblEmail.Location = new Point(757, 224);
+            lblEmail.Location = new Point(758, 258);
+            lblEmail.Margin = new Padding(4, 0, 4, 0);
             lblEmail.Name = "lblEmail";
             lblEmail.Size = new Size(82, 32);
             lblEmail.TabIndex = 16;
@@ -279,7 +285,8 @@ namespace WentzFreunde_Pilot
             // txtEmail
             // 
             txtEmail.Font = new Font("Segoe UI", 9F);
-            txtEmail.Location = new Point(945, 221);
+            txtEmail.Location = new Point(945, 252);
+            txtEmail.Margin = new Padding(4, 2, 4, 2);
             txtEmail.Name = "txtEmail";
             txtEmail.Size = new Size(437, 39);
             txtEmail.TabIndex = 11;
@@ -288,7 +295,8 @@ namespace WentzFreunde_Pilot
             // 
             lblTelefonnummer.AutoSize = true;
             lblTelefonnummer.Font = new Font("Segoe UI", 9F);
-            lblTelefonnummer.Location = new Point(10, 221);
+            lblTelefonnummer.Location = new Point(11, 258);
+            lblTelefonnummer.Margin = new Padding(4, 0, 4, 0);
             lblTelefonnummer.Name = "lblTelefonnummer";
             lblTelefonnummer.Size = new Size(93, 32);
             lblTelefonnummer.TabIndex = 14;
@@ -297,7 +305,8 @@ namespace WentzFreunde_Pilot
             // txtTelefonnummer
             // 
             txtTelefonnummer.Font = new Font("Segoe UI", 9F);
-            txtTelefonnummer.Location = new Point(229, 218);
+            txtTelefonnummer.Location = new Point(230, 252);
+            txtTelefonnummer.Margin = new Padding(4, 2, 4, 2);
             txtTelefonnummer.Name = "txtTelefonnummer";
             txtTelefonnummer.Size = new Size(437, 39);
             txtTelefonnummer.TabIndex = 10;
@@ -306,7 +315,8 @@ namespace WentzFreunde_Pilot
             // 
             lblWohnohrt.AutoSize = true;
             lblWohnohrt.Font = new Font("Segoe UI", 9F);
-            lblWohnohrt.Location = new Point(757, 176);
+            lblWohnohrt.Location = new Point(758, 205);
+            lblWohnohrt.Margin = new Padding(4, 0, 4, 0);
             lblWohnohrt.Name = "lblWohnohrt";
             lblWohnohrt.Size = new Size(48, 32);
             lblWohnohrt.TabIndex = 12;
@@ -315,7 +325,8 @@ namespace WentzFreunde_Pilot
             // txtWohnort
             // 
             txtWohnort.Font = new Font("Segoe UI", 9F);
-            txtWohnort.Location = new Point(945, 176);
+            txtWohnort.Location = new Point(947, 198);
+            txtWohnort.Margin = new Padding(4, 2, 4, 2);
             txtWohnort.Name = "txtWohnort";
             txtWohnort.Size = new Size(437, 39);
             txtWohnort.TabIndex = 9;
@@ -324,7 +335,8 @@ namespace WentzFreunde_Pilot
             // 
             lblPlz.AutoSize = true;
             lblPlz.Font = new Font("Segoe UI", 9F);
-            lblPlz.Location = new Point(10, 176);
+            lblPlz.Location = new Point(11, 205);
+            lblPlz.Margin = new Padding(4, 0, 4, 0);
             lblPlz.Name = "lblPlz";
             lblPlz.Size = new Size(134, 32);
             lblPlz.TabIndex = 10;
@@ -333,7 +345,8 @@ namespace WentzFreunde_Pilot
             // txtPlz
             // 
             txtPlz.Font = new Font("Segoe UI", 9F);
-            txtPlz.Location = new Point(229, 173);
+            txtPlz.Location = new Point(230, 198);
+            txtPlz.Margin = new Padding(4, 2, 4, 2);
             txtPlz.Name = "txtPlz";
             txtPlz.Size = new Size(195, 39);
             txtPlz.TabIndex = 8;
@@ -342,7 +355,8 @@ namespace WentzFreunde_Pilot
             // 
             lblStrasse.AutoSize = true;
             lblStrasse.Font = new Font("Segoe UI", 9F);
-            lblStrasse.Location = new Point(10, 131);
+            lblStrasse.Location = new Point(11, 151);
+            lblStrasse.Margin = new Padding(4, 0, 4, 0);
             lblStrasse.Name = "lblStrasse";
             lblStrasse.Size = new Size(162, 32);
             lblStrasse.TabIndex = 8;
@@ -351,7 +365,8 @@ namespace WentzFreunde_Pilot
             // txtStrasse
             // 
             txtStrasse.Font = new Font("Segoe UI", 9F);
-            txtStrasse.Location = new Point(229, 128);
+            txtStrasse.Location = new Point(230, 145);
+            txtStrasse.Margin = new Padding(4, 2, 4, 2);
             txtStrasse.Name = "txtStrasse";
             txtStrasse.Size = new Size(437, 39);
             txtStrasse.TabIndex = 7;
@@ -360,7 +375,8 @@ namespace WentzFreunde_Pilot
             // 
             lblTitel.AutoSize = true;
             lblTitel.Font = new Font("Segoe UI", 9F);
-            lblTitel.Location = new Point(10, 38);
+            lblTitel.Location = new Point(11, 45);
+            lblTitel.Margin = new Padding(4, 0, 4, 0);
             lblTitel.Name = "lblTitel";
             lblTitel.Size = new Size(60, 32);
             lblTitel.TabIndex = 6;
@@ -369,7 +385,8 @@ namespace WentzFreunde_Pilot
             // txtTitel
             // 
             txtTitel.Font = new Font("Segoe UI", 9F);
-            txtTitel.Location = new Point(229, 35);
+            txtTitel.Location = new Point(230, 38);
+            txtTitel.Margin = new Padding(4, 2, 4, 2);
             txtTitel.Name = "txtTitel";
             txtTitel.Size = new Size(195, 39);
             txtTitel.TabIndex = 4;
@@ -378,7 +395,8 @@ namespace WentzFreunde_Pilot
             // 
             lblNachname.AutoSize = true;
             lblNachname.Font = new Font("Segoe UI", 9F);
-            lblNachname.Location = new Point(757, 86);
+            lblNachname.Location = new Point(758, 105);
+            lblNachname.Margin = new Padding(4, 0, 4, 0);
             lblNachname.Name = "lblNachname";
             lblNachname.Size = new Size(129, 32);
             lblNachname.TabIndex = 4;
@@ -387,7 +405,8 @@ namespace WentzFreunde_Pilot
             // txtNachname
             // 
             txtNachname.Font = new Font("Segoe UI", 9F);
-            txtNachname.Location = new Point(945, 83);
+            txtNachname.Location = new Point(947, 98);
+            txtNachname.Margin = new Padding(4, 2, 4, 2);
             txtNachname.Name = "txtNachname";
             txtNachname.Size = new Size(437, 39);
             txtNachname.TabIndex = 6;
@@ -396,7 +415,8 @@ namespace WentzFreunde_Pilot
             // 
             lblVorname.AutoSize = true;
             lblVorname.Font = new Font("Segoe UI", 9F);
-            lblVorname.Location = new Point(10, 86);
+            lblVorname.Location = new Point(11, 98);
+            lblVorname.Margin = new Padding(4, 0, 4, 0);
             lblVorname.Name = "lblVorname";
             lblVorname.Size = new Size(109, 32);
             lblVorname.TabIndex = 2;
@@ -405,7 +425,8 @@ namespace WentzFreunde_Pilot
             // txtVorname
             // 
             txtVorname.Font = new Font("Segoe UI", 9F);
-            txtVorname.Location = new Point(229, 83);
+            txtVorname.Location = new Point(230, 92);
+            txtVorname.Margin = new Padding(4, 2, 4, 2);
             txtVorname.Name = "txtVorname";
             txtVorname.Size = new Size(437, 39);
             txtVorname.TabIndex = 5;
@@ -428,9 +449,11 @@ namespace WentzFreunde_Pilot
             grpBank.Controls.Add(lblKontoinhaberVorname);
             grpBank.Controls.Add(txtKontoinhaberVorname);
             grpBank.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            grpBank.Location = new Point(22, 478);
+            grpBank.Location = new Point(11, 527);
+            grpBank.Margin = new Padding(4, 2, 4, 2);
             grpBank.Name = "grpBank";
-            grpBank.Size = new Size(1400, 250);
+            grpBank.Padding = new Padding(4, 2, 4, 2);
+            grpBank.Size = new Size(1400, 288);
             grpBank.TabIndex = 4;
             grpBank.TabStop = false;
             grpBank.Text = "Bankdaten / Kontoinhaber";
@@ -439,16 +462,18 @@ namespace WentzFreunde_Pilot
             // dateMandatsdatum
             // 
             dateMandatsdatum.Font = new Font("Segoe UI", 9F);
-            dateMandatsdatum.Location = new Point(936, 187);
+            dateMandatsdatum.Location = new Point(945, 207);
+            dateMandatsdatum.Margin = new Padding(4, 2, 4, 2);
             dateMandatsdatum.Name = "dateMandatsdatum";
-            dateMandatsdatum.Size = new Size(437, 39);
+            dateMandatsdatum.Size = new Size(435, 39);
             dateMandatsdatum.TabIndex = 22;
             // 
             // lblMandatsdatum
             // 
             lblMandatsdatum.AutoSize = true;
             lblMandatsdatum.Font = new Font("Segoe UI", 9F);
-            lblMandatsdatum.Location = new Point(747, 192);
+            lblMandatsdatum.Location = new Point(758, 220);
+            lblMandatsdatum.Margin = new Padding(4, 0, 4, 0);
             lblMandatsdatum.Name = "lblMandatsdatum";
             lblMandatsdatum.Size = new Size(175, 32);
             lblMandatsdatum.TabIndex = 21;
@@ -458,7 +483,8 @@ namespace WentzFreunde_Pilot
             // 
             lblMandatsreferenz.AutoSize = true;
             lblMandatsreferenz.Font = new Font("Segoe UI", 9F);
-            lblMandatsreferenz.Location = new Point(0, 189);
+            lblMandatsreferenz.Location = new Point(11, 213);
+            lblMandatsreferenz.Margin = new Padding(4, 0, 4, 0);
             lblMandatsreferenz.Name = "lblMandatsreferenz";
             lblMandatsreferenz.Size = new Size(194, 32);
             lblMandatsreferenz.TabIndex = 19;
@@ -467,7 +493,8 @@ namespace WentzFreunde_Pilot
             // txtMandatsreferenz
             // 
             txtMandatsreferenz.Font = new Font("Segoe UI", 9F);
-            txtMandatsreferenz.Location = new Point(219, 186);
+            txtMandatsreferenz.Location = new Point(230, 207);
+            txtMandatsreferenz.Margin = new Padding(4, 2, 4, 2);
             txtMandatsreferenz.Name = "txtMandatsreferenz";
             txtMandatsreferenz.Size = new Size(437, 39);
             txtMandatsreferenz.TabIndex = 20;
@@ -476,7 +503,8 @@ namespace WentzFreunde_Pilot
             // 
             lblNameDerBank.AutoSize = true;
             lblNameDerBank.Font = new Font("Segoe UI", 9F);
-            lblNameDerBank.Location = new Point(0, 144);
+            lblNameDerBank.Location = new Point(11, 160);
+            lblNameDerBank.Margin = new Padding(4, 0, 4, 0);
             lblNameDerBank.Name = "lblNameDerBank";
             lblNameDerBank.Size = new Size(179, 32);
             lblNameDerBank.TabIndex = 14;
@@ -485,16 +513,18 @@ namespace WentzFreunde_Pilot
             // txtNameDerBank
             // 
             txtNameDerBank.Font = new Font("Segoe UI", 9F);
-            txtNameDerBank.Location = new Point(219, 141);
+            txtNameDerBank.Location = new Point(230, 154);
+            txtNameDerBank.Margin = new Padding(4, 2, 4, 2);
             txtNameDerBank.Name = "txtNameDerBank";
-            txtNameDerBank.Size = new Size(1154, 39);
+            txtNameDerBank.Size = new Size(1152, 39);
             txtNameDerBank.TabIndex = 18;
             // 
             // lblBIC
             // 
             lblBIC.AutoSize = true;
             lblBIC.Font = new Font("Segoe UI", 9F);
-            lblBIC.Location = new Point(747, 99);
+            lblBIC.Location = new Point(758, 107);
+            lblBIC.Margin = new Padding(4, 0, 4, 0);
             lblBIC.Name = "lblBIC";
             lblBIC.Size = new Size(49, 32);
             lblBIC.TabIndex = 12;
@@ -503,7 +533,8 @@ namespace WentzFreunde_Pilot
             // txtBIC
             // 
             txtBIC.Font = new Font("Segoe UI", 9F);
-            txtBIC.Location = new Point(936, 96);
+            txtBIC.Location = new Point(945, 100);
+            txtBIC.Margin = new Padding(4, 2, 4, 2);
             txtBIC.Name = "txtBIC";
             txtBIC.Size = new Size(437, 39);
             txtBIC.TabIndex = 17;
@@ -512,7 +543,8 @@ namespace WentzFreunde_Pilot
             // 
             lblIBAN.AutoSize = true;
             lblIBAN.Font = new Font("Segoe UI", 9F);
-            lblIBAN.Location = new Point(0, 99);
+            lblIBAN.Location = new Point(11, 107);
+            lblIBAN.Margin = new Padding(4, 0, 4, 0);
             lblIBAN.Name = "lblIBAN";
             lblIBAN.Size = new Size(67, 32);
             lblIBAN.TabIndex = 10;
@@ -521,7 +553,8 @@ namespace WentzFreunde_Pilot
             // txtIBAN
             // 
             txtIBAN.Font = new Font("Segoe UI", 9F);
-            txtIBAN.Location = new Point(219, 96);
+            txtIBAN.Location = new Point(230, 100);
+            txtIBAN.Margin = new Padding(4, 2, 4, 2);
             txtIBAN.Name = "txtIBAN";
             txtIBAN.Size = new Size(437, 39);
             txtIBAN.TabIndex = 16;
@@ -530,7 +563,8 @@ namespace WentzFreunde_Pilot
             // 
             lblKontoinhaberNachname.AutoSize = true;
             lblKontoinhaberNachname.Font = new Font("Segoe UI", 9F);
-            lblKontoinhaberNachname.Location = new Point(747, 54);
+            lblKontoinhaberNachname.Location = new Point(758, 53);
+            lblKontoinhaberNachname.Margin = new Padding(4, 0, 4, 0);
             lblKontoinhaberNachname.Name = "lblKontoinhaberNachname";
             lblKontoinhaberNachname.Size = new Size(129, 32);
             lblKontoinhaberNachname.TabIndex = 8;
@@ -539,7 +573,8 @@ namespace WentzFreunde_Pilot
             // txtKontoinhaberNachname
             // 
             txtKontoinhaberNachname.Font = new Font("Segoe UI", 9F);
-            txtKontoinhaberNachname.Location = new Point(936, 51);
+            txtKontoinhaberNachname.Location = new Point(945, 47);
+            txtKontoinhaberNachname.Margin = new Padding(4, 2, 4, 2);
             txtKontoinhaberNachname.Name = "txtKontoinhaberNachname";
             txtKontoinhaberNachname.Size = new Size(437, 39);
             txtKontoinhaberNachname.TabIndex = 15;
@@ -548,7 +583,8 @@ namespace WentzFreunde_Pilot
             // 
             lblKontoinhaberVorname.AutoSize = true;
             lblKontoinhaberVorname.Font = new Font("Segoe UI", 9F);
-            lblKontoinhaberVorname.Location = new Point(0, 54);
+            lblKontoinhaberVorname.Location = new Point(11, 53);
+            lblKontoinhaberVorname.Margin = new Padding(4, 0, 4, 0);
             lblKontoinhaberVorname.Name = "lblKontoinhaberVorname";
             lblKontoinhaberVorname.Size = new Size(109, 32);
             lblKontoinhaberVorname.TabIndex = 6;
@@ -557,7 +593,8 @@ namespace WentzFreunde_Pilot
             // txtKontoinhaberVorname
             // 
             txtKontoinhaberVorname.Font = new Font("Segoe UI", 9F);
-            txtKontoinhaberVorname.Location = new Point(219, 51);
+            txtKontoinhaberVorname.Location = new Point(230, 47);
+            txtKontoinhaberVorname.Margin = new Padding(4, 2, 4, 2);
             txtKontoinhaberVorname.Name = "txtKontoinhaberVorname";
             txtKontoinhaberVorname.Size = new Size(437, 39);
             txtKontoinhaberVorname.TabIndex = 14;
@@ -566,7 +603,8 @@ namespace WentzFreunde_Pilot
             // 
             lblMitgliedernummer.AutoSize = true;
             lblMitgliedernummer.Font = new Font("Segoe UI", 9F);
-            lblMitgliedernummer.Location = new Point(22, 42);
+            lblMitgliedernummer.Location = new Point(22, 43);
+            lblMitgliedernummer.Margin = new Padding(4, 0, 4, 0);
             lblMitgliedernummer.Name = "lblMitgliedernummer";
             lblMitgliedernummer.Size = new Size(204, 32);
             lblMitgliedernummer.TabIndex = 2;
@@ -574,23 +612,18 @@ namespace WentzFreunde_Pilot
             // 
             // txtMitgliedernummer
             // 
-            txtMitgliedernummer.Location = new Point(241, 39);
+            txtMitgliedernummer.Location = new Point(241, 38);
+            txtMitgliedernummer.Margin = new Padding(4, 2, 4, 2);
             txtMitgliedernummer.Name = "txtMitgliedernummer";
             txtMitgliedernummer.Size = new Size(195, 39);
             txtMitgliedernummer.TabIndex = 1;
-            // 
-            // txtEintritt
-            // 
-            txtEintritt.Location = new Point(483, 42);
-            txtEintritt.Name = "txtEintritt";
-            txtEintritt.Size = new Size(195, 39);
-            txtEintritt.TabIndex = 2;
             // 
             // lblBeitrag
             // 
             lblBeitrag.AutoSize = true;
             lblBeitrag.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             lblBeitrag.Location = new Point(769, 45);
+            lblBeitrag.Margin = new Padding(4, 0, 4, 0);
             lblBeitrag.Name = "lblBeitrag";
             lblBeitrag.Size = new Size(96, 32);
             lblBeitrag.TabIndex = 6;
@@ -599,7 +632,8 @@ namespace WentzFreunde_Pilot
             // txtMitgliedsbeitrag
             // 
             txtMitgliedsbeitrag.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            txtMitgliedsbeitrag.Location = new Point(909, 45);
+            txtMitgliedsbeitrag.Location = new Point(908, 45);
+            txtMitgliedsbeitrag.Margin = new Padding(4, 2, 4, 2);
             txtMitgliedsbeitrag.Name = "txtMitgliedsbeitrag";
             txtMitgliedsbeitrag.Size = new Size(195, 39);
             txtMitgliedsbeitrag.TabIndex = 3;
@@ -608,7 +642,8 @@ namespace WentzFreunde_Pilot
             // 
             lblEuro.AutoSize = true;
             lblEuro.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            lblEuro.Location = new Point(1126, 48);
+            lblEuro.Location = new Point(1125, 47);
+            lblEuro.Margin = new Padding(4, 0, 4, 0);
             lblEuro.Name = "lblEuro";
             lblEuro.Size = new Size(28, 32);
             lblEuro.TabIndex = 8;
@@ -619,7 +654,8 @@ namespace WentzFreunde_Pilot
             chbMitarbeit.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             chbMitarbeit.AutoSize = true;
             chbMitarbeit.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            chbMitarbeit.Location = new Point(22, 765);
+            chbMitarbeit.Location = new Point(22, 838);
+            chbMitarbeit.Margin = new Padding(4, 2, 4, 2);
             chbMitarbeit.Name = "chbMitarbeit";
             chbMitarbeit.Size = new Size(270, 36);
             chbMitarbeit.TabIndex = 21;
@@ -630,12 +666,11 @@ namespace WentzFreunde_Pilot
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1424, 829);
+            ClientSize = new Size(1415, 894);
             Controls.Add(chbMitarbeit);
             Controls.Add(lblEuro);
             Controls.Add(txtMitgliedsbeitrag);
             Controls.Add(lblBeitrag);
-            Controls.Add(txtEintritt);
             Controls.Add(lblMitgliedernummer);
             Controls.Add(grpBank);
             Controls.Add(txtMitgliedernummer);
@@ -643,10 +678,11 @@ namespace WentzFreunde_Pilot
             Controls.Add(btnOK);
             Controls.Add(btnAbbrechen);
             Icon = (Icon)resources.GetObject("$this.Icon");
+            Margin = new Padding(4, 2, 4, 2);
             MaximizeBox = false;
-            MaximumSize = new Size(1450, 900);
+            MaximumSize = new Size(1441, 965);
             MinimizeBox = false;
-            MinimumSize = new Size(1450, 900);
+            MinimumSize = new Size(1441, 965);
             Name = "formMember";
             Text = "Wentzinger Freund";
             Load += formMember_Load;
