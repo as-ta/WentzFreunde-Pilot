@@ -3,24 +3,16 @@
   "WorkspaceRootPath": "D:\\GIT\\WentzFreunde-Pilot\\WentzFreunde Pilot\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6344A292-23F2-4449-A93C-92112E685629}|WentzFreunde Pilot\\WentzFreunde Pilot.csproj|D:\\GIT\\WentzFreunde-Pilot\\WentzFreunde Pilot\\wentzfreunde pilot\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{6344A292-23F2-4449-A93C-92112E685629}|WentzFreunde Pilot\\WentzFreunde Pilot.csproj|solutionrelative:wentzfreunde pilot\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6344A292-23F2-4449-A93C-92112E685629}|WentzFreunde Pilot\\WentzFreunde Pilot.csproj|d:\\git\\wentzfreunde-pilot\\wentzfreunde pilot\\wentzfreunde pilot\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6344A292-23F2-4449-A93C-92112E685629}|WentzFreunde Pilot\\WentzFreunde Pilot.csproj|solutionrelative:wentzfreunde pilot\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6344A292-23F2-4449-A93C-92112E685629}|WentzFreunde Pilot\\WentzFreunde Pilot.csproj|D:\\GIT\\WentzFreunde-Pilot\\WentzFreunde Pilot\\wentzfreunde pilot\\memberform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{6344A292-23F2-4449-A93C-92112E685629}|WentzFreunde Pilot\\WentzFreunde Pilot.csproj|solutionrelative:wentzfreunde pilot\\memberform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6344A292-23F2-4449-A93C-92112E685629}|WentzFreunde Pilot\\WentzFreunde Pilot.csproj|d:\\git\\wentzfreunde-pilot\\wentzfreunde pilot\\wentzfreunde pilot\\bussineslogic\\sepaexport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6344A292-23F2-4449-A93C-92112E685629}|WentzFreunde Pilot\\WentzFreunde Pilot.csproj|solutionrelative:wentzfreunde pilot\\bussineslogic\\sepaexport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6344A292-23F2-4449-A93C-92112E685629}|WentzFreunde Pilot\\WentzFreunde Pilot.csproj|D:\\GIT\\WentzFreunde-Pilot\\WentzFreunde Pilot\\wentzfreunde pilot\\sepaconfigform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{6344A292-23F2-4449-A93C-92112E685629}|WentzFreunde Pilot\\WentzFreunde Pilot.csproj|solutionrelative:wentzfreunde pilot\\sepaconfigform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6344A292-23F2-4449-A93C-92112E685629}|WentzFreunde Pilot\\WentzFreunde Pilot.csproj|D:\\GIT\\WentzFreunde-Pilot\\WentzFreunde Pilot\\wentzfreunde pilot\\memberform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{6344A292-23F2-4449-A93C-92112E685629}|WentzFreunde Pilot\\WentzFreunde Pilot.csproj|solutionrelative:wentzfreunde pilot\\memberform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6344A292-23F2-4449-A93C-92112E685629}|WentzFreunde Pilot\\WentzFreunde Pilot.csproj|d:\\git\\wentzfreunde-pilot\\wentzfreunde pilot\\wentzfreunde pilot\\memberform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -74,31 +66,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "D:\\GIT\\WentzFreunde-Pilot\\WentzFreunde Pilot\\WentzFreunde Pilot\\Form1.cs",
-              "RelativeDocumentMoniker": "WentzFreunde Pilot\\Form1.cs",
-              "ToolTip": "D:\\GIT\\WentzFreunde-Pilot\\WentzFreunde Pilot\\WentzFreunde Pilot\\Form1.cs",
-              "RelativeToolTip": "WentzFreunde Pilot\\Form1.cs",
-              "ViewState": "AgIAAD0CAAAAAAAAAAAjwEcCAABWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-03T14:15:46.057Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "SepaExport.cs",
               "DocumentMoniker": "D:\\GIT\\WentzFreunde-Pilot\\WentzFreunde Pilot\\WentzFreunde Pilot\\BussinesLogic\\SepaExport.cs",
               "RelativeDocumentMoniker": "WentzFreunde Pilot\\BussinesLogic\\SepaExport.cs",
               "ToolTip": "D:\\GIT\\WentzFreunde-Pilot\\WentzFreunde Pilot\\WentzFreunde Pilot\\BussinesLogic\\SepaExport.cs",
               "RelativeToolTip": "WentzFreunde Pilot\\BussinesLogic\\SepaExport.cs",
-              "ViewState": "AgIAALgAAAAAAAAAAAAowLsAAACCAAAAAAAAAA==",
+              "ViewState": "AgIAAMEAAAAAAAAAAAAowM4AAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-03T21:43:08.6Z",
               "EditorCaption": ""
@@ -112,24 +90,11 @@
               "ToolTip": "D:\\GIT\\WentzFreunde-Pilot\\WentzFreunde Pilot\\WentzFreunde Pilot\\MemberForm.cs [Entwurf]",
               "RelativeToolTip": "WentzFreunde Pilot\\MemberForm.cs [Entwurf]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-03T14:31:29.785Z",
-              "EditorCaption": " [Entwurf]"
+              "WhenOpened": "2026-05-03T14:31:29.785Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form1.cs [Entwurf]",
-              "DocumentMoniker": "D:\\GIT\\WentzFreunde-Pilot\\WentzFreunde Pilot\\WentzFreunde Pilot\\Form1.cs",
-              "RelativeDocumentMoniker": "WentzFreunde Pilot\\Form1.cs",
-              "ToolTip": "D:\\GIT\\WentzFreunde-Pilot\\WentzFreunde Pilot\\WentzFreunde Pilot\\Form1.cs [Entwurf]",
-              "RelativeToolTip": "WentzFreunde Pilot\\Form1.cs [Entwurf]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-03T13:58:36.541Z",
-              "EditorCaption": " [Entwurf]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "SepaConfigForm.cs [Entwurf]",
               "DocumentMoniker": "D:\\GIT\\WentzFreunde-Pilot\\WentzFreunde Pilot\\WentzFreunde Pilot\\SepaConfigForm.cs",
               "RelativeDocumentMoniker": "WentzFreunde Pilot\\SepaConfigForm.cs",
@@ -140,7 +105,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "MemberForm.Designer.cs",
               "DocumentMoniker": "D:\\GIT\\WentzFreunde-Pilot\\WentzFreunde Pilot\\WentzFreunde Pilot\\MemberForm.Designer.cs",
               "RelativeDocumentMoniker": "WentzFreunde Pilot\\MemberForm.Designer.cs",
@@ -148,12 +113,11 @@
               "RelativeToolTip": "WentzFreunde Pilot\\MemberForm.Designer.cs",
               "ViewState": "AgIAAFMAAAAAAAAAAAAEwF8AAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-03T14:33:10.767Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-03T14:33:10.767Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "Member.cs",
               "DocumentMoniker": "D:\\GIT\\WentzFreunde-Pilot\\WentzFreunde Pilot\\WentzFreunde Pilot\\Data\\Member.cs",
               "RelativeDocumentMoniker": "WentzFreunde Pilot\\Data\\Member.cs",
@@ -165,7 +129,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
               "Title": "SepaConfig.cs",
               "DocumentMoniker": "D:\\GIT\\WentzFreunde-Pilot\\WentzFreunde Pilot\\WentzFreunde Pilot\\Data\\SepaConfig.cs",
               "RelativeDocumentMoniker": "WentzFreunde Pilot\\Data\\SepaConfig.cs",
@@ -177,7 +141,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 6,
               "Title": "SepaExportResult.cs",
               "DocumentMoniker": "D:\\GIT\\WentzFreunde-Pilot\\WentzFreunde Pilot\\WentzFreunde Pilot\\BussinesLogic\\SepaExportResult.cs",
               "RelativeDocumentMoniker": "WentzFreunde Pilot\\BussinesLogic\\SepaExportResult.cs",
@@ -189,7 +153,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 7,
               "Title": "SepaConfigSave.cs",
               "DocumentMoniker": "D:\\GIT\\WentzFreunde-Pilot\\WentzFreunde Pilot\\WentzFreunde Pilot\\BussinesLogic\\SepaConfigSave.cs",
               "RelativeDocumentMoniker": "WentzFreunde Pilot\\BussinesLogic\\SepaConfigSave.cs",
@@ -201,7 +165,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 9,
               "Title": "MemberSave.cs",
               "DocumentMoniker": "D:\\GIT\\WentzFreunde-Pilot\\WentzFreunde Pilot\\WentzFreunde Pilot\\BussinesLogic\\MemberSave.cs",
               "RelativeDocumentMoniker": "WentzFreunde Pilot\\BussinesLogic\\MemberSave.cs",
@@ -213,7 +177,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 8,
               "Title": "SepaConfigForm.cs",
               "DocumentMoniker": "D:\\GIT\\WentzFreunde-Pilot\\WentzFreunde Pilot\\WentzFreunde Pilot\\SepaConfigForm.cs",
               "RelativeDocumentMoniker": "WentzFreunde Pilot\\SepaConfigForm.cs",
@@ -225,7 +189,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 10,
               "Title": "SepaConfigForm.Designer.cs",
               "DocumentMoniker": "D:\\GIT\\WentzFreunde-Pilot\\WentzFreunde Pilot\\WentzFreunde Pilot\\SepaConfigForm.Designer.cs",
               "RelativeDocumentMoniker": "WentzFreunde Pilot\\SepaConfigForm.Designer.cs",
@@ -237,7 +201,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 11,
               "Title": "SortableBindingList.cs",
               "DocumentMoniker": "D:\\GIT\\WentzFreunde-Pilot\\WentzFreunde Pilot\\WentzFreunde Pilot\\SortableBindingList.cs",
               "RelativeDocumentMoniker": "WentzFreunde Pilot\\SortableBindingList.cs",
@@ -249,7 +213,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 12,
               "Title": "MemberForm.cs",
               "DocumentMoniker": "D:\\GIT\\WentzFreunde-Pilot\\WentzFreunde Pilot\\WentzFreunde Pilot\\MemberForm.cs",
               "RelativeDocumentMoniker": "WentzFreunde Pilot\\MemberForm.cs",
@@ -261,7 +225,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 13,
               "Title": "Form1.Designer.cs",
               "DocumentMoniker": "D:\\GIT\\WentzFreunde-Pilot\\WentzFreunde Pilot\\WentzFreunde Pilot\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "WentzFreunde Pilot\\Form1.Designer.cs",
@@ -269,8 +233,7 @@
               "RelativeToolTip": "WentzFreunde Pilot\\Form1.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-03T19:57:13.238Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-03T19:57:13.238Z"
             }
           ]
         }
