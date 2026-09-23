@@ -42,6 +42,7 @@
             alleDatenLöschenToolStripMenuItem = new ToolStripMenuItem();
             bankingToolStripMenuItem = new ToolStripMenuItem();
             sepaXMLExportierenToolStripMenuItem = new ToolStripMenuItem();
+            sepaBatchesErzeugenDevToolStripMenuItem = new ToolStripMenuItem();
             einstellungenToolStripMenuItem = new ToolStripMenuItem();
             datenDesCreditorsToolStripMenuItem = new ToolStripMenuItem();
             datensicherungToolStripMenuItem = new ToolStripMenuItem();
@@ -49,7 +50,7 @@
             gridMembers = new DataGridView();
             lblSearch = new Label();
             txtSearch = new TextBox();
-            sepaBatchesErzeugenDevToolStripMenuItem = new ToolStripMenuItem();
+            sepaXMLExportierenAuswahlToolStripMenuItem = new ToolStripMenuItem();
             statusMain.SuspendLayout();
             menMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)gridMembers).BeginInit();
@@ -143,7 +144,7 @@
             // 
             // bankingToolStripMenuItem
             // 
-            bankingToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { sepaXMLExportierenToolStripMenuItem, sepaBatchesErzeugenDevToolStripMenuItem });
+            bankingToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { sepaXMLExportierenToolStripMenuItem, sepaXMLExportierenAuswahlToolStripMenuItem, sepaBatchesErzeugenDevToolStripMenuItem });
             bankingToolStripMenuItem.Name = "bankingToolStripMenuItem";
             bankingToolStripMenuItem.Size = new Size(62, 22);
             bankingToolStripMenuItem.Text = "Banking";
@@ -151,9 +152,16 @@
             // sepaXMLExportierenToolStripMenuItem
             // 
             sepaXMLExportierenToolStripMenuItem.Name = "sepaXMLExportierenToolStripMenuItem";
-            sepaXMLExportierenToolStripMenuItem.Size = new Size(227, 22);
+            sepaXMLExportierenToolStripMenuItem.Size = new Size(246, 22);
             sepaXMLExportierenToolStripMenuItem.Text = "Sepa-XML exportieren";
             sepaXMLExportierenToolStripMenuItem.Click += sepaXMLExportierenToolStripMenuItem_Click;
+            // 
+            // sepaBatchesErzeugenDevToolStripMenuItem
+            // 
+            sepaBatchesErzeugenDevToolStripMenuItem.Name = "sepaBatchesErzeugenDevToolStripMenuItem";
+            sepaBatchesErzeugenDevToolStripMenuItem.Size = new Size(246, 22);
+            sepaBatchesErzeugenDevToolStripMenuItem.Text = "Sepa-Batches erzeugen (Dev)";
+            sepaBatchesErzeugenDevToolStripMenuItem.Click += sepaBatchesErzeugenDevToolStripMenuItem_Click;
             // 
             // einstellungenToolStripMenuItem
             // 
@@ -216,12 +224,12 @@
             txtSearch.TabIndex = 4;
             txtSearch.TextChanged += txtSearch_TextChanged;
             // 
-            // sepaBatchesErzeugenDevToolStripMenuItem
+            // sepaXMLExportierenAuswahlToolStripMenuItem
             // 
-            sepaBatchesErzeugenDevToolStripMenuItem.Name = "sepaBatchesErzeugenDevToolStripMenuItem";
-            sepaBatchesErzeugenDevToolStripMenuItem.Size = new Size(227, 22);
-            sepaBatchesErzeugenDevToolStripMenuItem.Text = "Sepa-Batches erzeugen (Dev)";
-            sepaBatchesErzeugenDevToolStripMenuItem.Click += sepaBatchesErzeugenDevToolStripMenuItem_Click;
+            sepaXMLExportierenAuswahlToolStripMenuItem.Name = "sepaXMLExportierenAuswahlToolStripMenuItem";
+            sepaXMLExportierenAuswahlToolStripMenuItem.Size = new Size(246, 22);
+            sepaXMLExportierenAuswahlToolStripMenuItem.Text = "Sepa-XML exportieren (Auswahl)";
+            sepaXMLExportierenAuswahlToolStripMenuItem.Click += sepaXMLExportierenAuswahlToolStripMenuItem_Click;
             // 
             // FrmMain
             // 
@@ -271,5 +279,6 @@
         private ToolStripMenuItem datensicherungToolStripMenuItem;
         private ToolStripMenuItem datensicherungImportierenToolStripMenuItem;
         private ToolStripMenuItem sepaBatchesErzeugenDevToolStripMenuItem;
+        private ToolStripMenuItem sepaXMLExportierenAuswahlToolStripMenuItem;
     }
 }

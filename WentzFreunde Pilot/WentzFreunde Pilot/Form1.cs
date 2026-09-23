@@ -623,5 +623,146 @@ namespace WentzFreunde_Pilot
         {
             SepaTestBatchesErzeugen(0, 900, 40);
         }
+
+        private void sepaXMLExportierenAuswahlToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string eingabe = ShowIdInputDialog();
+
+            if (eingabe == null)
+                return;
+
+            var ids = eingabe
+                .Split(',')
+                .Select(x => x.Trim())
+                .Where(x => int.TryParse(x, out _))    // nur gültige Zahlen
+                .Select(x => int.Parse(x))             // führende Nullen verschwinden
+                .ToHashSet();
+
+            var ausgewaehlteMembers = members
+                .Where(m => int.TryParse(m.Mitgliedernummer.ToString(), out int memberId)
+                            && ids.Contains(memberId))
+                .ToList();
+
+            if (ausgewaehlteMembers.Count == 0)
+            {
+                MessageBox.Show(
+                    "Es wurden keine Mitglieder mit den angegebenen IDs gefunden.",
+                    "SEPA-Export",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+
+                return;
+            }
+
+            using (SaveFileDialog dialog = new SaveFileDialog())
+            {
+                dialog.Filter = "SEPA XML-Datei (*.xml)|*.xml";
+                dialog.Title = "SEPA-Lastschriftdatei speichern";
+                dialog.FileName = $"SEPA_Lastschrift_{DateTime.Now:yyyyMMdd}.xml";
+
+                if (dialog.ShowDialog() != DialogResult.OK)
+                    return;
+
+                try
+                {
+                    var exportResult = SepaExport.ErstelleSepaLastschrift(
+                        dialog.FileName,
+                        ausgewaehlteMembers,
+                        sepaConfig);
+
+                    string meldung =
+                        $"Die SEPA-XML-Datei wurde erfolgreich erstellt.\n\n" +
+                        $"Exportiert: {exportResult.Exportiert}\n" +
+                        $"Ausgelassen: {exportResult.Ausgelassen}";
+
+                    if (exportResult.Warnungen.Count > 0)
+                    {
+                        meldung += "\n\nNicht exportierte Mitglieder:\n" +
+                                   string.Join("\n", exportResult.Warnungen.Take(20));
+
+                        if (exportResult.Warnungen.Count > 20)
+                        {
+                            meldung += $"\n... und {exportResult.Warnungen.Count - 20} weitere.";
+                        }
+                    }
+
+                    MessageBox.Show(
+                        meldung,
+                        "SEPA-Export",
+                        MessageBoxButtons.OK,
+                        exportResult.Ausgelassen > 0
+                            ? MessageBoxIcon.Warning
+                            : MessageBoxIcon.Information);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(
+                        "Fehler beim Erstellen der SEPA-Datei:\n\n" + ex.Message,
+                        "SEPA-Fehler",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Error);
+                }
+            }
+        }
+
+        private string ShowIdInputDialog()
+        {
+            using (Form form = new Form())
+            {
+                form.Text = "Mitglieder auswählen";
+                form.Width = 450;
+                form.Height = 160;
+                form.StartPosition = FormStartPosition.CenterParent;
+                form.FormBorderStyle = FormBorderStyle.FixedDialog;
+                form.MaximizeBox = false;
+                form.MinimizeBox = false;
+
+                Label label = new Label
+                {
+                    Left = 10,
+                    Top = 15,
+                    Width = 410,
+                    Text = "Mitglieds-IDs eingeben (mit Komma getrennt):"
+                };
+
+                TextBox textBox = new TextBox
+                {
+                    Left = 10,
+                    Top = 40,
+                    Width = 410
+                };
+
+                Button okButton = new Button
+                {
+                    Text = "OK",
+                    Left = 265,
+                    Top = 75,
+                    Width = 75,
+                    DialogResult = DialogResult.OK
+                };
+
+                Button cancelButton = new Button
+                {
+                    Text = "Abbrechen",
+                    Left = 345,
+                    Top = 75,
+                    Width = 75,
+                    DialogResult = DialogResult.Cancel
+                };
+
+                form.Controls.Add(label);
+                form.Controls.Add(textBox);
+                form.Controls.Add(okButton);
+                form.Controls.Add(cancelButton);
+
+                form.AcceptButton = okButton;
+                form.CancelButton = cancelButton;
+
+                return form.ShowDialog() == DialogResult.OK
+                    ? textBox.Text
+                    : null;
+            }
+        }
+
     }
 }
