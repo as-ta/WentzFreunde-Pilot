@@ -135,7 +135,7 @@ namespace WentzFreunde_Pilot
             // ---------------------------------------------------------
             // 2. Ungültige E-Mail-Adressen prüfen
             // ---------------------------------------------------------
-
+            /*
             var ungueltige = _mitglieder
                 .Where(m =>
                     !string.IsNullOrWhiteSpace(m.Email) &&
@@ -154,6 +154,7 @@ namespace WentzFreunde_Pilot
 
                 return;
             }
+            */
 
             // ---------------------------------------------------------
             // 3. Empfängerliste erstellen

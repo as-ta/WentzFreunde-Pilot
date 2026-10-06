@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WentzFreunde Pilot")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9e3d0338ac69430721dec797170cb3db32445bd7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+51328e4ae5703ec4a6e0ab0fa8828824ba3c09ed")]
 [assembly: System.Reflection.AssemblyProductAttribute("WentzFreunde Pilot")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WentzFreunde Pilot")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

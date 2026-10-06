@@ -35,7 +35,7 @@
       "RelativeMoniker": "D:0:0:{6344A292-23F2-4449-A93C-92112E685629}|WentzFreunde Pilot\\WentzFreunde Pilot.csproj|solutionrelative:wentzfreunde pilot\\emailconfigform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6344A292-23F2-4449-A93C-92112E685629}|WentzFreunde Pilot\\WentzFreunde Pilot.csproj|d:\\git\\wentzfreunde-pilot\\wentzfreunde pilot\\wentzfreunde pilot\\emailconfigform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{6344A292-23F2-4449-A93C-92112E685629}|WentzFreunde Pilot\\WentzFreunde Pilot.csproj|D:\\GIT\\WentzFreunde-Pilot\\WentzFreunde Pilot\\wentzfreunde pilot\\emailconfigform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{6344A292-23F2-4449-A93C-92112E685629}|WentzFreunde Pilot\\WentzFreunde Pilot.csproj|solutionrelative:wentzfreunde pilot\\emailconfigform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -122,8 +122,7 @@
               "RelativeToolTip": "WentzFreunde Pilot\\BussinesLogic\\EmailVersandProtokoll.cs",
               "ViewState": "AgIAABcAAAAAAAAAAAAgwDMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-06T09:23:09.396Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-06T09:23:09.396Z"
             },
             {
               "$type": "Document",
@@ -135,8 +134,7 @@
               "RelativeToolTip": "WentzFreunde Pilot\\BussinesLogic\\EmailService.cs",
               "ViewState": "AgIAADsAAAAAAAAAAAAAwEMAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-06T08:29:23.898Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-06T08:29:23.898Z"
             },
             {
               "$type": "Document",
@@ -148,8 +146,7 @@
               "RelativeToolTip": "WentzFreunde Pilot\\BussinesLogic\\EmailConfigSave.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-06T06:13:18.417Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-06T06:13:18.417Z"
             },
             {
               "$type": "Document",
@@ -159,7 +156,7 @@
               "RelativeDocumentMoniker": "WentzFreunde Pilot\\EmailEinladungForm.cs",
               "ToolTip": "D:\\GIT\\WentzFreunde-Pilot\\WentzFreunde Pilot\\WentzFreunde Pilot\\EmailEinladungForm.cs",
               "RelativeToolTip": "WentzFreunde Pilot\\EmailEinladungForm.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAowCkAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAHUAAAAAAAAAAIAwwIkAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-05T14:18:30.358Z",
               "EditorCaption": ""
@@ -210,8 +207,7 @@
               "ToolTip": "D:\\GIT\\WentzFreunde-Pilot\\WentzFreunde Pilot\\WentzFreunde Pilot\\MainFrom.cs [Entwurf]",
               "RelativeToolTip": "WentzFreunde Pilot\\MainFrom.cs [Entwurf]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-23T08:15:38.152Z",
-              "EditorCaption": " [Entwurf]"
+              "WhenOpened": "2026-09-23T08:15:38.152Z"
             },
             {
               "$type": "Document",
@@ -236,8 +232,7 @@
               "RelativeToolTip": "WentzFreunde Pilot\\Data\\EmailConfig.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-06T06:11:00.478Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-06T06:11:00.478Z"
             },
             {
               "$type": "Document",
@@ -248,8 +243,7 @@
               "ToolTip": "D:\\GIT\\WentzFreunde-Pilot\\WentzFreunde Pilot\\WentzFreunde Pilot\\EmailConfigForm.cs [Entwurf]",
               "RelativeToolTip": "WentzFreunde Pilot\\EmailConfigForm.cs [Entwurf]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-06T06:16:55.96Z",
-              "EditorCaption": " [Entwurf]"
+              "WhenOpened": "2026-10-06T06:16:55.96Z"
             },
             {
               "$type": "Document",
@@ -260,8 +254,7 @@
               "ToolTip": "D:\\GIT\\WentzFreunde-Pilot\\WentzFreunde Pilot\\WentzFreunde Pilot\\MainFrom.resx",
               "RelativeToolTip": "WentzFreunde Pilot\\MainFrom.resx",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2026-09-23T08:15:35.131Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-23T08:15:35.131Z"
             },
             {
               "$type": "Document",
@@ -273,8 +266,7 @@
               "RelativeToolTip": "WentzFreunde Pilot\\MemberForm.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAF8AAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-03T14:33:10.767Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-03T14:33:10.767Z"
             },
             {
               "$type": "Document",
@@ -286,8 +278,7 @@
               "RelativeToolTip": "WentzFreunde Pilot\\Data\\Member.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAAwCkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-03T14:08:34.68Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-03T14:08:34.68Z"
             },
             {
               "$type": "Document",
@@ -299,8 +290,7 @@
               "RelativeToolTip": "WentzFreunde Pilot\\Data\\SepaConfig.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-03T21:58:35Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-03T21:58:35Z"
             },
             {
               "$type": "Document",
@@ -312,8 +302,7 @@
               "RelativeToolTip": "WentzFreunde Pilot\\BussinesLogic\\SepaExportResult.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-04T15:13:34.488Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-04T15:13:34.488Z"
             },
             {
               "$type": "Document",
@@ -325,8 +314,7 @@
               "RelativeToolTip": "WentzFreunde Pilot\\BussinesLogic\\SepaConfigSave.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAgwCcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-03T22:04:36.107Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-03T22:04:36.107Z"
             },
             {
               "$type": "Document",
@@ -338,8 +326,7 @@
               "RelativeToolTip": "WentzFreunde Pilot\\BussinesLogic\\MemberSave.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAIBJwBIAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-03T14:11:33.085Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-03T14:11:33.085Z"
             },
             {
               "$type": "Document",
@@ -351,8 +338,7 @@
               "RelativeToolTip": "WentzFreunde Pilot\\MainFrom.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-03T19:57:13.238Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-03T19:57:13.238Z"
             },
             {
               "$type": "Document",
@@ -364,8 +350,7 @@
               "RelativeToolTip": "WentzFreunde Pilot\\BussinesLogic\\SepaExport.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-03T21:43:08.6Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-03T21:43:08.6Z"
             },
             {
               "$type": "Document",
@@ -376,8 +361,7 @@
               "ToolTip": "D:\\GIT\\WentzFreunde-Pilot\\WentzFreunde Pilot\\WentzFreunde Pilot\\MemberForm.cs [Entwurf]",
               "RelativeToolTip": "WentzFreunde Pilot\\MemberForm.cs [Entwurf]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-03T14:31:29.785Z",
-              "EditorCaption": " [Entwurf]"
+              "WhenOpened": "2026-05-03T14:31:29.785Z"
             },
             {
               "$type": "Document",
@@ -389,8 +373,7 @@
               "RelativeToolTip": "WentzFreunde Pilot\\SepaConfigForm.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAIA9wCAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-03T22:17:50.445Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-03T22:17:50.445Z"
             },
             {
               "$type": "Document",
@@ -415,8 +398,7 @@
               "RelativeToolTip": "WentzFreunde Pilot\\SortableBindingList.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAYwDAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-03T21:36:27.515Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-03T21:36:27.515Z"
             },
             {
               "$type": "Document",
@@ -428,8 +410,7 @@
               "RelativeToolTip": "WentzFreunde Pilot\\MemberForm.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAIAwwBoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-03T20:11:23.087Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-03T20:11:23.087Z"
             }
           ]
         }
