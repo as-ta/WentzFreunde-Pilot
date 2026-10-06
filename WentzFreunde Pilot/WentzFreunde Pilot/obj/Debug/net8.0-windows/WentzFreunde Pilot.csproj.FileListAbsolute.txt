@@ -54,3 +54,12 @@ D:\GIT\WentzFreunde-Pilot\WentzFreunde Pilot\WentzFreunde Pilot\obj\Debug\net8.0
 D:\GIT\WentzFreunde-Pilot\WentzFreunde Pilot\WentzFreunde Pilot\obj\Debug\net8.0-windows\WentzFreunde Pilot.genruntimeconfig.cache
 D:\GIT\WentzFreunde-Pilot\WentzFreunde Pilot\WentzFreunde Pilot\obj\Debug\net8.0-windows\ref\WentzFreunde Pilot.dll
 D:\GIT\WentzFreunde-Pilot\WentzFreunde Pilot\WentzFreunde Pilot\obj\Debug\net8.0-windows\WentzFreunde_Pilot.SepaConfigForm.resources
+D:\GIT\WentzFreunde-Pilot\WentzFreunde Pilot\WentzFreunde Pilot\obj\Debug\net8.0-windows\WentzFreunde_Pilot.EmailEinladungForm.resources
+D:\GIT\WentzFreunde-Pilot\WentzFreunde Pilot\WentzFreunde Pilot\obj\Debug\net8.0-windows\WentzFreunde_Pilot.EmailConfigForm.resources
+D:\GIT\WentzFreunde-Pilot\WentzFreunde Pilot\WentzFreunde Pilot\bin\Debug\net8.0-windows\BouncyCastle.Cryptography.dll
+D:\GIT\WentzFreunde-Pilot\WentzFreunde Pilot\WentzFreunde Pilot\bin\Debug\net8.0-windows\MailKit.dll
+D:\GIT\WentzFreunde-Pilot\WentzFreunde Pilot\WentzFreunde Pilot\bin\Debug\net8.0-windows\Microsoft.Bcl.Cryptography.dll
+D:\GIT\WentzFreunde-Pilot\WentzFreunde Pilot\WentzFreunde Pilot\bin\Debug\net8.0-windows\MimeKit.dll
+D:\GIT\WentzFreunde-Pilot\WentzFreunde Pilot\WentzFreunde Pilot\bin\Debug\net8.0-windows\System.Formats.Asn1.dll
+D:\GIT\WentzFreunde-Pilot\WentzFreunde Pilot\WentzFreunde Pilot\bin\Debug\net8.0-windows\System.Security.Cryptography.Pkcs.dll
+D:\GIT\WentzFreunde-Pilot\WentzFreunde Pilot\WentzFreunde Pilot\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll

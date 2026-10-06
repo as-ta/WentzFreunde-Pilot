@@ -42,15 +42,18 @@
             alleDatenLöschenToolStripMenuItem = new ToolStripMenuItem();
             bankingToolStripMenuItem = new ToolStripMenuItem();
             sepaXMLExportierenToolStripMenuItem = new ToolStripMenuItem();
+            sepaXMLExportierenAuswahlToolStripMenuItem = new ToolStripMenuItem();
             sepaBatchesErzeugenDevToolStripMenuItem = new ToolStripMenuItem();
             einstellungenToolStripMenuItem = new ToolStripMenuItem();
             datenDesCreditorsToolStripMenuItem = new ToolStripMenuItem();
             datensicherungToolStripMenuItem = new ToolStripMenuItem();
             datensicherungImportierenToolStripMenuItem = new ToolStripMenuItem();
+            sonstigesToolStripMenuItem = new ToolStripMenuItem();
+            einladungZurMitgliederversammlungToolStripMenuItem = new ToolStripMenuItem();
             gridMembers = new DataGridView();
             lblSearch = new Label();
             txtSearch = new TextBox();
-            sepaXMLExportierenAuswahlToolStripMenuItem = new ToolStripMenuItem();
+            sMPTZugangsdatenToolStripMenuItem = new ToolStripMenuItem();
             statusMain.SuspendLayout();
             menMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)gridMembers).BeginInit();
@@ -87,7 +90,7 @@
             // menMain
             // 
             menMain.ImageScalingSize = new Size(32, 32);
-            menMain.Items.AddRange(new ToolStripItem[] { dateiToolStripMenuItem, bankingToolStripMenuItem, einstellungenToolStripMenuItem });
+            menMain.Items.AddRange(new ToolStripItem[] { dateiToolStripMenuItem, bankingToolStripMenuItem, einstellungenToolStripMenuItem, sonstigesToolStripMenuItem });
             menMain.Location = new Point(0, 0);
             menMain.Name = "menMain";
             menMain.Padding = new Padding(3, 1, 0, 1);
@@ -156,6 +159,13 @@
             sepaXMLExportierenToolStripMenuItem.Text = "Sepa-XML exportieren";
             sepaXMLExportierenToolStripMenuItem.Click += sepaXMLExportierenToolStripMenuItem_Click;
             // 
+            // sepaXMLExportierenAuswahlToolStripMenuItem
+            // 
+            sepaXMLExportierenAuswahlToolStripMenuItem.Name = "sepaXMLExportierenAuswahlToolStripMenuItem";
+            sepaXMLExportierenAuswahlToolStripMenuItem.Size = new Size(246, 22);
+            sepaXMLExportierenAuswahlToolStripMenuItem.Text = "Sepa-XML exportieren (Auswahl)";
+            sepaXMLExportierenAuswahlToolStripMenuItem.Click += sepaXMLExportierenAuswahlToolStripMenuItem_Click;
+            // 
             // sepaBatchesErzeugenDevToolStripMenuItem
             // 
             sepaBatchesErzeugenDevToolStripMenuItem.Name = "sepaBatchesErzeugenDevToolStripMenuItem";
@@ -165,7 +175,7 @@
             // 
             // einstellungenToolStripMenuItem
             // 
-            einstellungenToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { datenDesCreditorsToolStripMenuItem, datensicherungToolStripMenuItem, datensicherungImportierenToolStripMenuItem });
+            einstellungenToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { datenDesCreditorsToolStripMenuItem, sMPTZugangsdatenToolStripMenuItem, datensicherungToolStripMenuItem, datensicherungImportierenToolStripMenuItem });
             einstellungenToolStripMenuItem.Name = "einstellungenToolStripMenuItem";
             einstellungenToolStripMenuItem.Size = new Size(90, 22);
             einstellungenToolStripMenuItem.Text = "Einstellungen";
@@ -190,6 +200,20 @@
             datensicherungImportierenToolStripMenuItem.Size = new Size(222, 22);
             datensicherungImportierenToolStripMenuItem.Text = "Datensicherung importieren";
             datensicherungImportierenToolStripMenuItem.Click += datensicherungImportierenToolStripMenuItem_Click;
+            // 
+            // sonstigesToolStripMenuItem
+            // 
+            sonstigesToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { einladungZurMitgliederversammlungToolStripMenuItem });
+            sonstigesToolStripMenuItem.Name = "sonstigesToolStripMenuItem";
+            sonstigesToolStripMenuItem.Size = new Size(69, 22);
+            sonstigesToolStripMenuItem.Text = "Sonstiges";
+            // 
+            // einladungZurMitgliederversammlungToolStripMenuItem
+            // 
+            einladungZurMitgliederversammlungToolStripMenuItem.Name = "einladungZurMitgliederversammlungToolStripMenuItem";
+            einladungZurMitgliederversammlungToolStripMenuItem.Size = new Size(276, 22);
+            einladungZurMitgliederversammlungToolStripMenuItem.Text = "Einladung zur Mitgliederversammlung";
+            einladungZurMitgliederversammlungToolStripMenuItem.Click += einladungZurMitgliederversammlungToolStripMenuItem_Click;
             // 
             // gridMembers
             // 
@@ -224,12 +248,12 @@
             txtSearch.TabIndex = 4;
             txtSearch.TextChanged += txtSearch_TextChanged;
             // 
-            // sepaXMLExportierenAuswahlToolStripMenuItem
+            // sMPTZugangsdatenToolStripMenuItem
             // 
-            sepaXMLExportierenAuswahlToolStripMenuItem.Name = "sepaXMLExportierenAuswahlToolStripMenuItem";
-            sepaXMLExportierenAuswahlToolStripMenuItem.Size = new Size(246, 22);
-            sepaXMLExportierenAuswahlToolStripMenuItem.Text = "Sepa-XML exportieren (Auswahl)";
-            sepaXMLExportierenAuswahlToolStripMenuItem.Click += sepaXMLExportierenAuswahlToolStripMenuItem_Click;
+            sMPTZugangsdatenToolStripMenuItem.Name = "sMPTZugangsdatenToolStripMenuItem";
+            sMPTZugangsdatenToolStripMenuItem.Size = new Size(222, 22);
+            sMPTZugangsdatenToolStripMenuItem.Text = "SMPT Zugangsdaten";
+            sMPTZugangsdatenToolStripMenuItem.Click += sMPTZugangsdatenToolStripMenuItem_Click;
             // 
             // FrmMain
             // 
@@ -280,5 +304,8 @@
         private ToolStripMenuItem datensicherungImportierenToolStripMenuItem;
         private ToolStripMenuItem sepaBatchesErzeugenDevToolStripMenuItem;
         private ToolStripMenuItem sepaXMLExportierenAuswahlToolStripMenuItem;
+        private ToolStripMenuItem sonstigesToolStripMenuItem;
+        private ToolStripMenuItem einladungZurMitgliederversammlungToolStripMenuItem;
+        private ToolStripMenuItem sMPTZugangsdatenToolStripMenuItem;
     }
 }

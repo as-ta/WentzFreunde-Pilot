@@ -17,6 +17,7 @@ namespace WentzFreunde_Pilot
 
         private BindingSource memberBindingSource = new BindingSource();
         private SepaConfig sepaConfig;
+        private Data.EmailConfig emailConfig;
 
         public FrmMain()
         {
@@ -28,6 +29,7 @@ namespace WentzFreunde_Pilot
             var geladeneMitglieder = BussinesLogic.MemberSave.Laden();
 
             sepaConfig = BussinesLogic.SepaConfigSave.Laden();
+            emailConfig = BussinesLogic.EmailConfigSave.Laden();
 
             //members = new BindingList<Data.Member>(geladeneMitglieder);
             members = new SortableBindingList<Data.Member>(
@@ -764,5 +766,21 @@ namespace WentzFreunde_Pilot
             }
         }
 
+        private void einladungZurMitgliederversammlungToolStripMenuItem_Click(
+            object sender, EventArgs e)
+        {
+            using (EmailEinladungForm form = new EmailEinladungForm(members.ToList(), emailConfig))
+            {
+                form.ShowDialog(this);
+            }
+        }
+
+        private void sMPTZugangsdatenToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            using (EmailConfigForm form = new EmailConfigForm(emailConfig))
+            {
+                form.ShowDialog(this);
+            }
+        }
     }
 }
